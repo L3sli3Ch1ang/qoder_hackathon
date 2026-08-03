@@ -11,6 +11,38 @@ Workforce Development Agency (SWDA) Skills Framework dataset.
 
 ---
 
+## Development Environment (NixOS + direnv + flake)
+
+This repository runs entirely on **NixOS** with **direnv** and **flake.nix**.
+Every dependency — Python, Node, Bun, Qoder CLI, IDEs, vector DB — is
+declaratively provisioned by the flake. No manual installs, no `apt`, no
+`brew`.
+
+### Repository layout
+
+| Folder | Purpose | Activation |
+|---|---|---|
+| `qoder_desktop/` | Qoder Desktop (Electron) + Qdrant + full dev stack | `cd qoder_desktop` → direnv auto-loads `flake.nix` |
+| `qoder_cli/` | SkillBridge app + Qoder CLI + FastAPI + Bun | `cd qoder_cli` → direnv auto-loads `flake.nix` |
+
+### How it works
+
+Each subfolder contains:
+- **`flake.nix`** — declares the full dev shell (languages, tools, libraries,
+  runtime library paths for C extensions).
+- **`.envrc`** — contains `use flake`, which tells direnv to automatically
+  activate the Nix flake shell whenever you `cd` into the directory.
+
+```bash
+# Just cd in — direnv activates the flake shell automatically
+cd qoder_desktop    # Qoder Desktop + Qdrant + Qoder CLI + IDEs
+cd qoder_cli        # Qoder CLI + FastAPI + Bun + Python + FFmpeg + Chromium
+```
+
+No `nix develop` wrapper needed — direnv handles it transparently.
+
+---
+
 ## 1. Purpose & Objectives
 
 ### The problem
@@ -308,14 +340,13 @@ For the Alibaba Cloud *international* endpoint, set
 ## 7. Running & testing
 
 ```bash
-cd /home/leslie/Documents/Qoder/2026-07-29/chat-2
-nix develop                                            # dev shell (Python 3.13, uv)
-uv pip install -r requirements.txt                     # if the venv needs deps
-uvicorn app.main:app --host 127.0.0.1 --port 8000      # serve (first start indexes Qdrant)
+cd qoder_cli                                             # direnv auto-activates the flake shell
+uv pip install -r requirements.txt                       # if the venv needs deps
+uvicorn app.main:app --host 127.0.0.1 --port 8000        # serve (first start indexes Qdrant)
 # Open http://127.0.0.1:8000 → paste a JD → see ranked results
 
-pytest tests/ -v                                       # 97 tests, all green
-python -m app.validate_seed_data                       # data-quality gate, exit 0
+pytest tests/ -v                                         # 97 tests, all green
+python -m app.validate_seed_data                         # data-quality gate, exit 0
 ```
 
 Regenerate seed data (requires the official workbooks in `.research/`):
