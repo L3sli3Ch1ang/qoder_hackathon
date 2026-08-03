@@ -1,0 +1,48 @@
+# ── Environment / secrets ──
+.env
+*.env.local
+
+# ── Nix direnv cache ──
+.direnv/
+**/.direnv/
+
+# ── Python ──
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+.venv/
+**/.venv/
+
+# ── Node / JS ──
+node_modules/
+
+# ── IDE ──
+.idea/
+**/.idea/
+
+# ── Qoder cache ──
+.qoder/
+**/.qoder/
+
+# ── Qdrant storage ──
+.qdrant_storage/
+**/.qdrant_storage/
+
+# ── Large binaries / media ──
+*.deb
+*.mp4
+*.lock
+
+# ── OS ──
+.DS_Store
+Thumbs.db
+
+# ── Demo video ──
+/demo-video/
+
+# ── Project-specific notes (not tracked) ──
+qoder_desktop/instruction.txt
+qoder_desktop/write-up.txt
+qoder_desktop/prompt
+qoder_desktop/*.md

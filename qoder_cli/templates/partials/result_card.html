@@ -1,0 +1,196 @@
+{% set sector_dot = {'finance':'bg-fin','ict':'bg-ict','healthcare':'bg-health','engineering':'bg-eng','sustainability':'bg-sust'} %}
+<article x-data="{ expanded: false }" x-show="$store.ui.visible('{{ result.sector }}', {{ result.score }})" data-cid="{{ result.candidate_id }}" data-score="{{ result.score }}" class="relative border border-hairline bg-surface/80 rounded-md overflow-hidden transition-shadow hover:shadow-[0_2px_12px_rgba(27,39,51,0.08)]">
+    <!-- Sector transit-line accent bar -->
+    <span class="absolute left-0 top-0 bottom-0 w-1 {{ sector_dot.get(result.sector, 'bg-inksoft') }}" aria-hidden="true"></span>
+
+    <div class="pl-5 pr-5 py-4">
+        <div class="flex items-start gap-4">
+
+            <!-- Score ring -->
+            <div class="relative w-14 h-14 flex-shrink-0">
+                <svg class="w-14 h-14 transform -rotate-90 text-cream" viewBox="0 0 36 36">
+                    <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                          fill="none" stroke="currentColor" stroke-width="3.2"/>
+                    <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                          fill="none" stroke="currentColor" stroke-width="3.2"
+                          class="{% if result.is_surprise %}text-tang{% else %}text-brand{% endif %}"
+                          stroke-linecap="round" stroke-dasharray="{{ result.score }}, 100"/>
+                </svg>
+                <span class="absolute inset-0 flex items-center justify-center font-mono text-[13px] font-semibold text-ink">{{ result.score }}<span class="text-[9px] text-inksoft">%</span></span>
+            </div>
+
+            <!-- Candidate info -->
+            <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 flex-wrap">
+                    <!-- What-If delta badge (populated client-side after a
+                         what-if re-run): shows how this candidate's score moved
+                         versus the previous run. Hidden until a delta exists. -->
+                    <span class="whatif-delta hidden inline-flex items-center border font-mono text-[10px] font-semibold rounded-sm px-1.5 py-0.5"></span>
+                    <h3 class="font-display font-bold text-[15px] tracking-tight text-ink">{{ result.name }}</h3>
+                    <!-- Sector as transit-line chip -->
+                    <span class="inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-wide text-inksoft border border-hairline rounded-sm px-1.5 py-0.5 bg-paper/70">
+                        <span class="w-1.5 h-1.5 rounded-full {{ sector_dot.get(result.sector, 'bg-inksoft') }}"></span>{{ result.sector }}
+                    </span>
+                    {% if result.is_surprise %}
+                    <span class="inline-flex items-center gap-1 bg-tang text-white font-mono text-[10px] uppercase tracking-wide px-2 py-0.5 rounded-sm font-medium">&#9733; Unexpected match</span>
+                    {% endif %}
+                    {% if result.proficiency_fit is not none %}
+                    <span class="inline-flex items-center gap-1 font-mono text-[10px] uppercase tracking-wide text-brand border border-brand/30 rounded-sm px-1.5 py-0.5 bg-brand/5" title="Proficiency fit: candidate proficiency levels vs the role's required levels">PL fit {{ (result.proficiency_fit * 100)|int }}%</span>
+                    {% endif %}
+                    {% if result.emerging_skills %}
+                    <span class="inline-flex items-center gap-1 font-mono text-[10px] uppercase tracking-wide text-tang border border-tang/30 rounded-sm px-1.5 py-0.5 bg-tang/5" title="Emerging skills: {{ result.emerging_skills|join(', ') }}">&#9733; Emerging</span>
+                    {% endif %}
+                    {% if result.casl_skills %}
+                    <span class="inline-flex items-center gap-1 font-mono text-[10px] uppercase tracking-wide text-bridgeb border border-bridgeb/30 rounded-sm px-1.5 py-0.5 bg-bridgeb/5" title="Critical Core / Course Approval skills: {{ result.casl_skills|join(', ') }}">&#9670; CASL</span>
+                    {% endif %}
+                </div>
+                <p class="font-mono text-[11px] text-inksoft mt-0.5">{{ result.title }} &middot; {{ result.years_experience }} yrs</p>
+
+                <!-- Narrative -->
+                <p class="mt-2 text-[13px] italic text-inksoft leading-relaxed border-l-2 border-hairline pl-3">{{ result.narrative }}</p>
+
+                <!-- Perspective-aware framing (both lenses are recruiter-facing):
+                     "Hire" shows an evaluation banner plus a click-through to the full
+                     CV; "Upskill" shows the candidate's development potential with an
+                     upskill roadmap. Both render server-side and toggle instantly
+                     client-side (no re-query). -->
+                <div x-cloak x-show="Alpine.store('ui').perspective === 'recruiter'" class="mt-2.5">
+                    <div class="flex items-start gap-2 border border-brand/25 bg-brand/5 rounded-sm px-3 py-2">
+                        <span class="font-mono text-[10px] uppercase tracking-[0.16em] text-brand font-semibold mt-px shrink-0">Hire readiness</span>
+                        <p class="text-[12px] text-ink leading-snug">
+                            <span class="font-semibold">{{ result.matched|length }}</span> transferable skill{{ 's' if result.matched|length != 1 else '' }} verified
+                            {%- if result.gap %}; probe <span class="font-semibold text-gapr">{{ result.gap[0] }}</span> in interview{% endif %}.
+                        </p>
+                    </div>
+                    <button type="button" @click="$store.profile.show('{{ result.candidate_id }}')"
+                            class="mt-2 inline-flex items-center gap-1.5 border border-hairline bg-surface/70 rounded-sm px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.14em] text-inksoft hover:text-ink hover:border-brand/50 transition-colors">
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                        View full profile
+                    </button>
+                </div>
+                <div x-cloak x-show="Alpine.store('ui').perspective === 'candidate'" class="mt-2.5">
+                    <div class="flex items-start gap-2 border border-tang/30 bg-tang/5 rounded-sm px-3 py-2">
+                        <span class="font-mono text-[10px] uppercase tracking-[0.16em] text-tang font-semibold mt-px shrink-0">Upskill potential</span>
+                        <p class="text-[12px] text-ink leading-snug">
+                            {%- if result.matched %}Builds on <span class="font-semibold text-matchg">{{ result.matched[0] }}</span>{% else %}Has transferable skills to build on{% endif %}
+                            {%- if result.gap %}; coach <span class="font-semibold text-gapr">{{ result.gap[0] }}</span> first{% endif %}.
+                        </p>
+                    </div>
+                    {% if result.courses or result.bridge %}
+                    <div class="mt-2 border border-hairline bg-paper/60 rounded-sm px-3 py-2.5">
+                        <p class="font-mono text-[10px] uppercase tracking-[0.16em] text-inksoft mb-2">Upskill roadmap</p>
+                        {% if result.courses %}
+                        <div class="space-y-1.5">
+                            {% for course in result.courses %}
+                            <div class="flex items-start gap-2 text-[12px]">
+                                <span class="font-mono text-[9px] uppercase tracking-wide text-gapr border border-gapr/25 bg-gapr/10 rounded-sm px-1 py-px mt-px shrink-0">gap</span>
+                                <p class="text-ink leading-snug">
+                                    <span class="font-semibold text-gapr">{{ course.skill }}</span>
+                                    &rarr; <a href="{{ course.url }}" target="_blank" class="text-brand hover:underline">{{ course.course_name }}</a>
+                                    {%- if course.duration_hours %} <span class="font-mono text-[10px] text-inksoft">({{ course.duration_hours }}h)</span>{% endif %}
+                                </p>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                        {% if result.bridge %}
+                        <div class="mt-2 space-y-1 text-[12px] text-inksoft">
+                            {% for b in result.bridge %}
+                            <p class="flex items-start gap-2"><span class="font-mono text-[9px] uppercase tracking-wide text-bridgeb border border-bridgeb/25 bg-bridgeb/10 rounded-sm px-1 py-px mt-px shrink-0">bridge</span><span class="leading-snug"><span class="text-bridgeb font-medium">{{ b.gap_skill }}</span> &larr; they already have <span class="text-ink font-medium">{{ b.via_skill }}</span></span></p>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                </div>
+
+                <!-- Skill chips -->
+                <div class="mt-3 flex flex-wrap gap-1.5">
+                    {% if result.matched_detail %}
+                    {% for d in result.matched_detail %}
+                    <span class="px-2 py-0.5 bg-matchg/10 text-matchg border border-matchg/25 rounded-sm text-[11px] font-medium">{{ d.skill }}{% if d.candidate_pl and d.required_pl %} <span class="font-mono text-[9px] {{ 'text-matchg' if d.met else 'text-gapr' }}">L{{ d.candidate_pl }}{% if d.met %}&ge;{% else %}&lt;{% endif %}L{{ d.required_pl }}</span>{% endif %}</span>
+                    {% endfor %}
+                    {% else %}
+                    {% for skill in result.matched %}
+                    <span class="px-2 py-0.5 bg-matchg/10 text-matchg border border-matchg/25 rounded-sm text-[11px] font-medium">{{ skill }}</span>
+                    {% endfor %}
+                    {% endif %}
+                    {% for skill in result.gap %}
+                    <span class="px-2 py-0.5 bg-gapr/10 text-gapr border border-gapr/25 rounded-sm text-[11px] font-medium">{{ skill }}</span>
+                    {% endfor %}
+                    {% for b in result.bridge %}
+                    <span class="px-2 py-0.5 bg-bridgeb/10 text-bridgeb border border-bridgeb/25 rounded-sm text-[11px] font-medium">{{ b.gap_skill }} &larr; {{ b.via_skill }}</span>
+                    {% endfor %}
+                </div>
+
+                <!-- Course links (Hire lens; the Upskill lens shows the
+                     upskill roadmap above instead) -->
+                {% if result.courses %}
+                <div x-cloak x-show="Alpine.store('ui').perspective === 'recruiter'" class="mt-2.5 space-y-1">
+                    {% for course in result.courses[:3] %}
+                    <a href="{{ course.url }}" target="_blank" class="inline-flex items-center gap-1.5 font-mono text-[11px] text-brand hover:text-branddeep hover:underline">
+                        <span class="text-tang">&#8599;</span> {{ course.course_name }}{% if course.duration_hours %} <span class="text-inksoft">({{ course.duration_hours }}h)</span>{% endif %}
+                    </a><br>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Expandable accordion -->
+        <div class="mt-3 border-t border-hairline/70 pt-2">
+            <button @click="expanded = !expanded" class="font-mono text-[10px] uppercase tracking-[0.16em] text-brand hover:text-branddeep font-medium inline-flex items-center gap-1.5">
+                <svg class="w-3 h-3 transition-transform" :class="expanded && 'rotate-90'" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/>
+                </svg>
+                Why this match?
+            </button>
+            <div x-show="expanded" x-transition class="mt-3 space-y-3 text-xs">
+                <div>
+                    <h4 class="font-mono text-[10px] uppercase tracking-[0.16em] text-matchg mb-1.5">Matched &middot; {{ result.matched|length }}</h4>
+                    <div class="flex flex-wrap gap-1">
+                        {% if result.matched_detail %}
+                        {% for d in result.matched_detail %}
+                        <span class="px-2 py-0.5 bg-matchg/10 text-matchg rounded-sm">{{ d.skill }}{% if d.candidate_pl and d.required_pl %} <span class="font-mono text-[9px] {{ 'text-matchg' if d.met else 'text-gapr' }}">L{{ d.candidate_pl }}{% if d.met %}&ge;{% else %}&lt;{% endif %}L{{ d.required_pl }}</span>{% endif %}</span>
+                        {% endfor %}
+                        {% else %}
+                        {% for skill in result.matched %}
+                        <span class="px-2 py-0.5 bg-matchg/10 text-matchg rounded-sm">{{ skill }}</span>
+                        {% endfor %}
+                        {% endif %}
+                        {% if not result.matched %}<span class="text-inksoft/60">none identified</span>{% endif %}
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-mono text-[10px] uppercase tracking-[0.16em] text-gapr mb-1.5">Gaps &middot; {{ result.gap|length }}</h4>
+                    <div class="flex flex-wrap gap-1">
+                        {% for skill in result.gap %}
+                        <span class="px-2 py-0.5 bg-gapr/10 text-gapr rounded-sm">{{ skill }}</span>
+                        {% endfor %}
+                        {% if not result.gap %}{% if result.skills_detected %}<span class="text-inksoft/60">no gaps &mdash; perfect fit</span>{% else %}<span class="text-inksoft/60">no framework skills detected &mdash; ranked by text similarity</span>{% endif %}{% endif %}
+                    </div>
+                </div>
+                {% if result.bridge %}
+                <div>
+                    <h4 class="font-mono text-[10px] uppercase tracking-[0.16em] text-bridgeb mb-1.5">Bridges &middot; {{ result.bridge|length }}</h4>
+                    <div class="space-y-1 text-inksoft">
+                        {% for b in result.bridge %}
+                        <p><span class="text-bridgeb font-medium">{{ b.gap_skill }}</span> bridges via <span class="text-ink font-medium">{{ b.via_skill }}</span> <span class="font-mono text-[10px]">({{ (b.confidence * 100)|int }}%)</span></p>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+                {% if result.courses %}
+                <div>
+                    <h4 class="font-mono text-[10px] uppercase tracking-[0.16em] text-brand mb-1.5">Recommended courses</h4>
+                    <div class="space-y-1 text-inksoft">
+                        {% for course in result.courses %}
+                        <p><a href="{{ course.url }}" target="_blank" class="text-brand hover:underline">{{ course.course_name }}</a> &mdash; {{ course.provider }}{% if course.duration_hours %} <span class="font-mono text-[10px]">&middot; {{ course.duration_hours }}h</span>{% endif %}</p>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</article>

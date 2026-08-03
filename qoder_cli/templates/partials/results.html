@@ -1,0 +1,26 @@
+{% if error is defined and error %}
+<div class="border border-gapr/40 bg-gapr/10 rounded-md p-4 text-gapr text-sm font-mono">
+    error: {{ error }}
+</div>
+{% elif results|length == 0 %}
+<div class="border border-dashed border-hairline rounded-md px-8 py-14 text-center bg-surface/40">
+    <div class="font-display text-3xl font-extrabold tracking-tight text-ink/20 select-none mb-3" aria-hidden="true">&#9675;</div>
+    <h3 class="font-display text-lg font-bold text-ink mb-1">No matches found</h3>
+    <p class="text-sm text-inksoft">Try a different job description or broaden your search terms.</p>
+</div>
+{% else %}
+<div class="flex items-baseline justify-between mb-3">
+    <p class="font-mono text-[10px] uppercase tracking-[0.2em] text-inksoft">04 &middot; results</p>
+    <p class="font-mono text-xs text-inksoft">
+        <span class="font-semibold text-brand">{{ total }}</span> candidates
+        {% if mode == 'surprise' %}
+        <span class="ml-2 inline-flex items-center gap-1 bg-tang text-white px-2 py-0.5 rounded-sm text-[10px] uppercase tracking-wide font-medium">&#9733; serendipity</span>
+        {% endif %}
+    </p>
+</div>
+<div class="space-y-3">
+    {% for result in results %}
+    {% include "partials/result_card.html" %}
+    {% endfor %}
+</div>
+{% endif %}

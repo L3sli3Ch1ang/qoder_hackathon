@@ -1,0 +1,29 @@
+# SWDA source workbooks + scratch analysis (large; not committed).
+# The generated seed data in app/data/*.json IS committed.
+.research/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# Embedded vector store (per-directory lock; regenerated on demand)
+qdrant_data/
+
+# direnv / nix
+.direnv/
+.envrc
+
+# Test / tooling caches
+.pytest_cache/
+
+# IDE-local config (Qoder)
+.qoder/
+
+# Root-level scratch artifacts (transient logs / scripts / captures)
+/_*
+
+# Narration: Kokoro-82M model weights (~350 MB, downloaded) + transient clips
+demo-video/narration/kokoro_model/
+demo-video/narration/clips/

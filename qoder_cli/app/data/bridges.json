@@ -1,0 +1,214 @@
+{
+  "Artificial Intelligence Application": {
+    "via": "Artificial Intelligence Application in Product Development",
+    "confidence": 0.542
+  },
+  "Artificial Intelligence Application in Product Development": {
+    "via": "Artificial Intelligence Application",
+    "confidence": 0.738
+  },
+  "Automation Management in Product Development": {
+    "via": "Robotic and Automation Technology Application",
+    "confidence": 0.208
+  },
+  "Business Continuity Management": {
+    "via": "Business Continuity Planning",
+    "confidence": 0.296
+  },
+  "Business Continuity Planning": {
+    "via": "Business Continuity Management",
+    "confidence": 0.577
+  },
+  "Business Development": {
+    "via": "Business Opportunities Development",
+    "confidence": 0.302
+  },
+  "Business Intelligence and Data Analytics": {
+    "via": "Data and Statistical Analytics",
+    "confidence": 0.654
+  },
+  "Business Opportunities Development": {
+    "via": "Business Development",
+    "confidence": 0.464
+  },
+  "Business Planning": {
+    "via": "Networking",
+    "confidence": 0.203
+  },
+  "Business Risk Assessment": {
+    "via": "Risk Management",
+    "confidence": 0.788
+  },
+  "Clinical Support Duties and Procedures": {
+    "via": "Clinical Support for Patient Service Associates",
+    "confidence": 0.529
+  },
+  "Computational Modelling": {
+    "via": "Data Analytics and Computational Modelling",
+    "confidence": 0.413
+  },
+  "Conflict Management": {
+    "via": "Conflict Resolution",
+    "confidence": 0.269
+  },
+  "Conflict Resolution": {
+    "via": "Conflict Management",
+    "confidence": 0.392
+  },
+  "Contract Development and Management": {
+    "via": "Contract Preparation, Evaluation, Negotiation and Tendering",
+    "confidence": 0.289
+  },
+  "Contract Preparation, Evaluation, Negotiation and Tendering": {
+    "via": "Contract Development and Management",
+    "confidence": 0.375
+  },
+  "Data Analytics and Computational Modelling": {
+    "via": "Computational Modelling",
+    "confidence": 0.373
+  },
+  "Data Ethics": {
+    "via": "Professional, Legal and Ethical Healthcare Practice",
+    "confidence": 0.342
+  },
+  "Data Storytelling and Visualisation": {
+    "via": "Data Visualisation and Storyboarding",
+    "confidence": 0.613
+  },
+  "Data Visualisation": {
+    "via": "Data Visualisation and Storyboarding",
+    "confidence": 0.865
+  },
+  "Data Visualisation and Storyboarding": {
+    "via": "Data Storytelling and Visualisation",
+    "confidence": 0.826
+  },
+  "Data and Statistical Analytics": {
+    "via": "Business Intelligence and Data Analytics",
+    "confidence": 0.212
+  },
+  "Food Shop Hygiene Maintenance": {
+    "via": "Horizontal Surface Maintenance",
+    "confidence": 0.265
+  },
+  "Furniture and Furnishing Maintenance": {
+    "via": "Horizontal Surface Maintenance",
+    "confidence": 0.341
+  },
+  "Hazardous Material Management": {
+    "via": "Waste Treatment Management",
+    "confidence": 0.219
+  },
+  "Horizontal Surface Maintenance": {
+    "via": "Furniture and Furnishing Maintenance",
+    "confidence": 0.304
+  },
+  "Intervention Planning in Genetic Counselling": {
+    "via": "Intervention Planning in Occupational Therapy",
+    "confidence": 0.25
+  },
+  "Management of Stakeholders": {
+    "via": "Stakeholder Management",
+    "confidence": 0.533
+  },
+  "Market Research and Analysis": {
+    "via": "Market Research",
+    "confidence": 0.667
+  },
+  "Networking": {
+    "via": "Business Planning",
+    "confidence": 0.338
+  },
+  "Non-sterile Compounding": {
+    "via": "Sterile Manufacturing of Pharmaceutical Products",
+    "confidence": 0.317
+  },
+  "Nursing Manpower Planning": {
+    "via": "Manpower Planning",
+    "confidence": 0.306
+  },
+  "Organisational Analysis": {
+    "via": "Strategy Planning",
+    "confidence": 0.231
+  },
+  "Patient education in genetics": {
+    "via": "Client Education in Rehabilitation Therapy",
+    "confidence": 0.231
+  },
+  "People and Performance Management": {
+    "via": "Performance Management",
+    "confidence": 0.424
+  },
+  "Performance Management": {
+    "via": "People and Performance Management",
+    "confidence": 0.206
+  },
+  "Performance Management for Nursing": {
+    "via": "People Management",
+    "confidence": 0.351
+  },
+  "Professional, Legal and Ethical Healthcare Practice": {
+    "via": "Data Ethics",
+    "confidence": 0.232
+  },
+  "Public Hygiene Maintenance": {
+    "via": "Vertical Surface Maintenance",
+    "confidence": 0.302
+  },
+  "Quality Improvement and Safe Practices": {
+    "via": "Continuous Improvement Management",
+    "confidence": 0.205
+  },
+  "Quality Standards": {
+    "via": "Quality Assurance",
+    "confidence": 0.348
+  },
+  "Robotic and Automation Technology Application": {
+    "via": "Robotics and Automation Application",
+    "confidence": 0.3
+  },
+  "Staff Training Facilitation": {
+    "via": "Staff Training Management",
+    "confidence": 0.333
+  },
+  "Staff Training Management": {
+    "via": "Staff Training Facilitation",
+    "confidence": 0.318
+  },
+  "Sterile Manufacturing of Pharmaceutical Products": {
+    "via": "Non-sterile Compounding",
+    "confidence": 0.2
+  },
+  "Strategy Execution": {
+    "via": "Strategy Implementation",
+    "confidence": 0.321
+  },
+  "Valuation": {
+    "via": "Valuation Research and Analysis",
+    "confidence": 0.246
+  },
+  "Valuation Research and Analysis": {
+    "via": "Valuation",
+    "confidence": 0.737
+  },
+  "Vertical Surface Maintenance": {
+    "via": "Washroom Maintenance",
+    "confidence": 0.312
+  },
+  "Washroom Maintenance": {
+    "via": "Vertical Surface Maintenance",
+    "confidence": 0.333
+  },
+  "Waste Disposal Management": {
+    "via": "Waste Sorting Management",
+    "confidence": 0.219
+  },
+  "Workforce Planning": {
+    "via": "Manpower Planning",
+    "confidence": 0.72
+  },
+  "Workplace Safety and Health Practices Implementation": {
+    "via": "Workplace Safety and Health Performance Management",
+    "confidence": 0.211
+  }
+}

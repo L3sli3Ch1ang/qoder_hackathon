@@ -1,0 +1,2606 @@
+{
+  "3D Modelling": {
+    "course_name": "3D Modelling (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=3D+Modelling",
+    "duration_hours": 8
+  },
+  "Account Management": {
+    "course_name": "Account Management (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Account+Management",
+    "duration_hours": 12
+  },
+  "Agile Software Development": {
+    "course_name": "Agile Software Development (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Agile+Software+Development",
+    "duration_hours": 40
+  },
+  "Airway Assessment and Management": {
+    "course_name": "Airway Assessment and Management (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Airway+Assessment+and+Management",
+    "duration_hours": 12
+  },
+  "Ambulance Readiness and Maintenance": {
+    "course_name": "Ambulance Readiness and Maintenance (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Ambulance+Readiness+and+Maintenance",
+    "duration_hours": 40
+  },
+  "Ambulatory Care Service Support": {
+    "course_name": "Ambulatory Care Service Support (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Ambulatory+Care+Service+Support",
+    "duration_hours": 12
+  },
+  "Analysis of Research Data": {
+    "course_name": "Analysis of Research Data (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Analysis+of+Research+Data",
+    "duration_hours": 8
+  },
+  "Applications Development": {
+    "course_name": "Applications Development (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Applications+Development",
+    "duration_hours": 12
+  },
+  "Applications Integration": {
+    "course_name": "Applications Integration (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Applications+Integration",
+    "duration_hours": 8
+  },
+  "Applications Support and Enhancement": {
+    "course_name": "Applications Support and Enhancement (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Applications+Support+and+Enhancement",
+    "duration_hours": 32
+  },
+  "Artificial Intelligence Application": {
+    "course_name": "Artificial Intelligence Application (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Artificial+Intelligence+Application",
+    "duration_hours": 16
+  },
+  "Artificial Intelligence Application in Product Development": {
+    "course_name": "Artificial Intelligence Application in Product Development (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Artificial+Intelligence+Application+in+Product+Development",
+    "duration_hours": 20
+  },
+  "Asset Management": {
+    "course_name": "Asset Management (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Asset+Management",
+    "duration_hours": 32
+  },
+  "Asset and Liability Management": {
+    "course_name": "Asset and Liability Management (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Asset+and+Liability+Management",
+    "duration_hours": 12
+  },
+  "Assistive Devices Prescription in Occupational Therapy": {
+    "course_name": "Assistive Devices Prescription in Occupational Therapy (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Assistive+Devices+Prescription+in+Occupational+Therapy",
+    "duration_hours": 16
+  },
+  "Attribution Analysis": {
+    "course_name": "Attribution Analysis (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Attribution+Analysis",
+    "duration_hours": 40
+  },
+  "Audit Compliance": {
+    "course_name": "Audit Compliance (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Audit+Compliance",
+    "duration_hours": 8
+  },
+  "Audit Frameworks": {
+    "course_name": "Audit Frameworks (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Audit+Frameworks",
+    "duration_hours": 16
+  },
+  "Audit Management": {
+    "course_name": "Audit Management (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Audit+Management",
+    "duration_hours": 20
+  },
+  "Audit and Compliance": {
+    "course_name": "Audit and Compliance (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Audit+and+Compliance",
+    "duration_hours": 16
+  },
+  "Audit and Review Management": {
+    "course_name": "Audit and Review Management (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Audit+and+Review+Management",
+    "duration_hours": 16
+  },
+  "Automated Distribution Management": {
+    "course_name": "Automated Distribution Management (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Automated+Distribution+Management",
+    "duration_hours": 32
+  },
+  "Automation Management in Product Development": {
+    "course_name": "Automation Management in Product Development (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Automation+Management+in+Product+Development",
+    "duration_hours": 20
+  },
+  "Automation Research and Implementation": {
+    "course_name": "Automation Research and Implementation (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Automation+Research+and+Implementation",
+    "duration_hours": 16
+  },
+  "Behavioural Finance": {
+    "course_name": "Behavioural Finance (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Behavioural+Finance",
+    "duration_hours": 20
+  },
+  "Benchmarking": {
+    "course_name": "Benchmarking (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Benchmarking",
+    "duration_hours": 12
+  },
+  "Billing Procedure": {
+    "course_name": "Billing Procedure (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Billing+Procedure",
+    "duration_hours": 40
+  },
+  "Brand Management": {
+    "course_name": "Brand Management (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Brand+Management",
+    "duration_hours": 32
+  },
+  "Breathing Assessment and Management": {
+    "course_name": "Breathing Assessment and Management (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Breathing+Assessment+and+Management",
+    "duration_hours": 16
+  },
+  "Budgeting": {
+    "course_name": "Budgeting (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Budgeting",
+    "duration_hours": 32
+  },
+  "Building Information Modelling Application": {
+    "course_name": "Building Information Modelling Application (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Building+Information+Modelling+Application",
+    "duration_hours": 12
+  },
+  "Business Acumen": {
+    "course_name": "Business Acumen (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Business+Acumen",
+    "duration_hours": 8
+  },
+  "Business Agility": {
+    "course_name": "Business Agility (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Business+Agility",
+    "duration_hours": 32
+  },
+  "Business Continuity": {
+    "course_name": "Business Continuity (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Business+Continuity",
+    "duration_hours": 20
+  },
+  "Business Continuity Management": {
+    "course_name": "Business Continuity Management (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Business+Continuity+Management",
+    "duration_hours": 12
+  },
+  "Business Continuity Planning": {
+    "course_name": "Business Continuity Planning (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Business+Continuity+Planning",
+    "duration_hours": 40
+  },
+  "Business Development": {
+    "course_name": "Business Development (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Business+Development",
+    "duration_hours": 32
+  },
+  "Business Environment Analysis": {
+    "course_name": "Business Environment Analysis (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Business+Environment+Analysis",
+    "duration_hours": 12
+  },
+  "Business Innovation": {
+    "course_name": "Business Innovation (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Business+Innovation",
+    "duration_hours": 20
+  },
+  "Business Innovation and Improvement": {
+    "course_name": "Business Innovation and Improvement (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Business+Innovation+and+Improvement",
+    "duration_hours": 12
+  },
+  "Business Intelligence and Data Analytics": {
+    "course_name": "Business Intelligence and Data Analytics (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Business+Intelligence+and+Data+Analytics",
+    "duration_hours": 20
+  },
+  "Business Needs Analysis": {
+    "course_name": "Business Needs Analysis (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Business+Needs+Analysis",
+    "duration_hours": 24
+  },
+  "Business Negotiation": {
+    "course_name": "Business Negotiation (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Business+Negotiation",
+    "duration_hours": 16
+  },
+  "Business Opportunities Development": {
+    "course_name": "Business Opportunities Development (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Business+Opportunities+Development",
+    "duration_hours": 20
+  },
+  "Business Performance Management": {
+    "course_name": "Business Performance Management (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Business+Performance+Management",
+    "duration_hours": 24
+  },
+  "Business Planning": {
+    "course_name": "Business Planning (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Business+Planning",
+    "duration_hours": 24
+  },
+  "Business Presentation Delivery": {
+    "course_name": "Business Presentation Delivery (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Business+Presentation+Delivery",
+    "duration_hours": 12
+  },
+  "Business Process Analysis": {
+    "course_name": "Business Process Analysis (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Business+Process+Analysis",
+    "duration_hours": 12
+  },
+  "Business Process Re-engineering": {
+    "course_name": "Business Process Re-engineering (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Business+Process+Re-engineering",
+    "duration_hours": 32
+  },
+  "Business Proposal Writing": {
+    "course_name": "Business Proposal Writing (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Business+Proposal+Writing",
+    "duration_hours": 20
+  },
+  "Business Requirements Mapping": {
+    "course_name": "Business Requirements Mapping (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Business+Requirements+Mapping",
+    "duration_hours": 32
+  },
+  "Business Risk Assessment": {
+    "course_name": "Business Risk Assessment (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Business+Risk+Assessment",
+    "duration_hours": 20
+  },
+  "Business Risk Management": {
+    "course_name": "Business Risk Management (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Business+Risk+Management",
+    "duration_hours": 20
+  },
+  "Capital Expenditure and Investment Evaluation": {
+    "course_name": "Capital Expenditure and Investment Evaluation (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Capital+Expenditure+and+Investment+Evaluation",
+    "duration_hours": 20
+  },
+  "Capital Raising": {
+    "course_name": "Capital Raising (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Capital+Raising",
+    "duration_hours": 20
+  },
+  "Carbon Credit Project Development": {
+    "course_name": "Carbon Credit Project Development (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Carbon+Credit+Project+Development",
+    "duration_hours": 8
+  },
+  "Carbon Footprint Management": {
+    "course_name": "Carbon Footprint Management (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Carbon+Footprint+Management",
+    "duration_hours": 32
+  },
+  "Carbon Markets and Decarbonisation Strategies Management": {
+    "course_name": "Carbon Markets and Decarbonisation Strategies Management (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Carbon+Markets+and+Decarbonisation+Strategies+Management",
+    "duration_hours": 24
+  },
+  "Carbon Pricing Policy Advisory": {
+    "course_name": "Carbon Pricing Policy Advisory (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Carbon+Pricing+Policy+Advisory",
+    "duration_hours": 8
+  },
+  "Carbon Reporting": {
+    "course_name": "Carbon Reporting (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Carbon+Reporting",
+    "duration_hours": 20
+  },
+  "Carbon Trading": {
+    "course_name": "Carbon Trading (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Carbon+Trading",
+    "duration_hours": 20
+  },
+  "Care Transition in Nursing": {
+    "course_name": "Care Transition in Nursing (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Care+Transition+in+Nursing",
+    "duration_hours": 24
+  },
+  "Cash Flow Reporting": {
+    "course_name": "Cash Flow Reporting (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Cash+Flow+Reporting",
+    "duration_hours": 24
+  },
+  "Change Management": {
+    "course_name": "Change Management (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Change+Management",
+    "duration_hours": 24
+  },
+  "Channel Management": {
+    "course_name": "Channel Management (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Channel+Management",
+    "duration_hours": 8
+  },
+  "Circulation Assessment and Management": {
+    "course_name": "Circulation Assessment and Management (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Circulation+Assessment+and+Management",
+    "duration_hours": 16
+  },
+  "Civil and Structural Engineering Management": {
+    "course_name": "Civil and Structural Engineering Management (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Civil+and+Structural+Engineering+Management",
+    "duration_hours": 32
+  },
+  "Cleaning Chemical Handling": {
+    "course_name": "Cleaning Chemical Handling (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Cleaning+Chemical+Handling",
+    "duration_hours": 8
+  },
+  "Client Advocacy": {
+    "course_name": "Client Advocacy (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Client+Advocacy",
+    "duration_hours": 12
+  },
+  "Client Assessment for Occupational Therapy": {
+    "course_name": "Client Assessment for Occupational Therapy (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Client+Assessment+for+Occupational+Therapy",
+    "duration_hours": 12
+  },
+  "Client Education in Rehabilitation Therapy": {
+    "course_name": "Client Education in Rehabilitation Therapy (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Client+Education+in+Rehabilitation+Therapy",
+    "duration_hours": 8
+  },
+  "Client Investment Suitability": {
+    "course_name": "Client Investment Suitability (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Client+Investment+Suitability",
+    "duration_hours": 16
+  },
+  "Climate Change Management": {
+    "course_name": "Climate Change Management (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Climate+Change+Management",
+    "duration_hours": 32
+  },
+  "Climate Reporting": {
+    "course_name": "Climate Reporting (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Climate+Reporting",
+    "duration_hours": 24
+  },
+  "Clinical Governance": {
+    "course_name": "Clinical Governance (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Clinical+Governance",
+    "duration_hours": 16
+  },
+  "Clinical Incident Management in Rehabilitation Therapy": {
+    "course_name": "Clinical Incident Management in Rehabilitation Therapy (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Clinical+Incident+Management+in+Rehabilitation+Therapy",
+    "duration_hours": 24
+  },
+  "Clinical Investigational Drug Management": {
+    "course_name": "Clinical Investigational Drug Management (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Clinical+Investigational+Drug+Management",
+    "duration_hours": 16
+  },
+  "Clinical Records Documentation and Management": {
+    "course_name": "Clinical Records Documentation and Management (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Clinical+Records+Documentation+and+Management",
+    "duration_hours": 40
+  },
+  "Clinical Services Development": {
+    "course_name": "Clinical Services Development (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Clinical+Services+Development",
+    "duration_hours": 8
+  },
+  "Clinical Support Duties and Procedures": {
+    "course_name": "Clinical Support Duties and Procedures (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Clinical+Support+Duties+and+Procedures",
+    "duration_hours": 16
+  },
+  "Clinical Support for Patient Service Associates": {
+    "course_name": "Clinical Support for Patient Service Associates (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Clinical+Support+for+Patient+Service+Associates",
+    "duration_hours": 20
+  },
+  "Clinical Teaching and Supervision": {
+    "course_name": "Clinical Teaching and Supervision (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Clinical+Teaching+and+Supervision",
+    "duration_hours": 40
+  },
+  "Cloud Computing": {
+    "course_name": "Cloud Computing (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Cloud+Computing",
+    "duration_hours": 8
+  },
+  "Collaboration": {
+    "course_name": "Collaboration (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Collaboration",
+    "duration_hours": 8
+  },
+  "Collateral Management": {
+    "course_name": "Collateral Management (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Collateral+Management",
+    "duration_hours": 20
+  },
+  "Commissioning and Start-up Management": {
+    "course_name": "Commissioning and Start-up Management (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Commissioning+and+Start-up+Management",
+    "duration_hours": 32
+  },
+  "Commodities Trading Management": {
+    "course_name": "Commodities Trading Management (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Commodities+Trading+Management",
+    "duration_hours": 40
+  },
+  "Communication": {
+    "course_name": "Communication (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Communication",
+    "duration_hours": 12
+  },
+  "Compliance Mindset Development": {
+    "course_name": "Compliance Mindset Development (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Compliance+Mindset+Development",
+    "duration_hours": 12
+  },
+  "Computational Modelling": {
+    "course_name": "Computational Modelling (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Computational+Modelling",
+    "duration_hours": 20
+  },
+  "Computer Vision Technology": {
+    "course_name": "Computer Vision Technology (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Computer+Vision+Technology",
+    "duration_hours": 20
+  },
+  "Configuration Tracking": {
+    "course_name": "Configuration Tracking (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Configuration+Tracking",
+    "duration_hours": 12
+  },
+  "Conflict Management": {
+    "course_name": "Conflict Management (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Conflict+Management",
+    "duration_hours": 16
+  },
+  "Conflict Resolution": {
+    "course_name": "Conflict Resolution (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Conflict+Resolution",
+    "duration_hours": 16
+  },
+  "Consumer Intelligence Analysis": {
+    "course_name": "Consumer Intelligence Analysis (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Consumer+Intelligence+Analysis",
+    "duration_hours": 8
+  },
+  "Continuous Improvement Management": {
+    "course_name": "Continuous Improvement Management (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Continuous+Improvement+Management",
+    "duration_hours": 24
+  },
+  "Continuous Integration and Continuous Deployment": {
+    "course_name": "Continuous Integration and Continuous Deployment (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Continuous+Integration+and+Continuous+Deployment",
+    "duration_hours": 16
+  },
+  "Contract Development and Management": {
+    "course_name": "Contract Development and Management (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Contract+Development+and+Management",
+    "duration_hours": 12
+  },
+  "Contract Management": {
+    "course_name": "Contract Management (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Contract+Management",
+    "duration_hours": 16
+  },
+  "Contract Preparation, Evaluation, Negotiation and Tendering": {
+    "course_name": "Contract Preparation, Evaluation, Negotiation and Tendering (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Contract+Preparation%2C+Evaluation%2C+Negotiation+and+Tendering",
+    "duration_hours": 12
+  },
+  "Contract and Vendor Management": {
+    "course_name": "Contract and Vendor Management (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Contract+and+Vendor+Management",
+    "duration_hours": 40
+  },
+  "Control System Programming": {
+    "course_name": "Control System Programming (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Control+System+Programming",
+    "duration_hours": 24
+  },
+  "Corporate Governance": {
+    "course_name": "Corporate Governance (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Corporate+Governance",
+    "duration_hours": 40
+  },
+  "Corporate and Business Law Application": {
+    "course_name": "Corporate and Business Law Application (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Corporate+and+Business+Law+Application",
+    "duration_hours": 20
+  },
+  "Cost Management": {
+    "course_name": "Cost Management (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Cost+Management",
+    "duration_hours": 32
+  },
+  "Creative Thinking": {
+    "course_name": "Creative Thinking (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Creative+Thinking",
+    "duration_hours": 24
+  },
+  "Credit Assessment": {
+    "course_name": "Credit Assessment (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Credit+Assessment",
+    "duration_hours": 24
+  },
+  "Crisis Management": {
+    "course_name": "Crisis Management (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Crisis+Management",
+    "duration_hours": 24
+  },
+  "Critical Thinking": {
+    "course_name": "Critical Thinking (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Critical+Thinking",
+    "duration_hours": 32
+  },
+  "Curriculum Design": {
+    "course_name": "Curriculum Design (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Curriculum+Design",
+    "duration_hours": 8
+  },
+  "Customer Acceptance Checking and Onboarding": {
+    "course_name": "Customer Acceptance Checking and Onboarding (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Customer+Acceptance+Checking+and+Onboarding",
+    "duration_hours": 20
+  },
+  "Customer Acquisition Management": {
+    "course_name": "Customer Acquisition Management (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Customer+Acquisition+Management",
+    "duration_hours": 20
+  },
+  "Customer Experience Management": {
+    "course_name": "Customer Experience Management (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Customer+Experience+Management",
+    "duration_hours": 32
+  },
+  "Customer Management": {
+    "course_name": "Customer Management (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Customer+Management",
+    "duration_hours": 16
+  },
+  "Customer Orientation": {
+    "course_name": "Customer Orientation (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Customer+Orientation",
+    "duration_hours": 32
+  },
+  "Customer Relationship Management": {
+    "course_name": "Customer Relationship Management (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Customer+Relationship+Management",
+    "duration_hours": 20
+  },
+  "Cyber Forensics": {
+    "course_name": "Cyber Forensics (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Cyber+Forensics",
+    "duration_hours": 8
+  },
+  "Cyber Risk Management": {
+    "course_name": "Cyber Risk Management (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Cyber+Risk+Management",
+    "duration_hours": 32
+  },
+  "Cyber and Data Breach Incident Management": {
+    "course_name": "Cyber and Data Breach Incident Management (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Cyber+and+Data+Breach+Incident+Management",
+    "duration_hours": 12
+  },
+  "Cybersecurity": {
+    "course_name": "Cybersecurity (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Cybersecurity",
+    "duration_hours": 24
+  },
+  "Data Analytics": {
+    "course_name": "Data Analytics (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Data+Analytics",
+    "duration_hours": 20
+  },
+  "Data Analytics and Computational Modelling": {
+    "course_name": "Data Analytics and Computational Modelling (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Data+Analytics+and+Computational+Modelling",
+    "duration_hours": 20
+  },
+  "Data Centre Facilities Management": {
+    "course_name": "Data Centre Facilities Management (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Data+Centre+Facilities+Management",
+    "duration_hours": 40
+  },
+  "Data Collection and Analysis": {
+    "course_name": "Data Collection and Analysis (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Data+Collection+and+Analysis",
+    "duration_hours": 8
+  },
+  "Data Collection and Management": {
+    "course_name": "Data Collection and Management (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Data+Collection+and+Management",
+    "duration_hours": 32
+  },
+  "Data Design": {
+    "course_name": "Data Design (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Data+Design",
+    "duration_hours": 8
+  },
+  "Data Engineering": {
+    "course_name": "Data Engineering (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Data+Engineering",
+    "duration_hours": 32
+  },
+  "Data Ethics": {
+    "course_name": "Data Ethics (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Data+Ethics",
+    "duration_hours": 12
+  },
+  "Data Governance": {
+    "course_name": "Data Governance (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Data+Governance",
+    "duration_hours": 32
+  },
+  "Data Management": {
+    "course_name": "Data Management (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Data+Management",
+    "duration_hours": 40
+  },
+  "Data Migration": {
+    "course_name": "Data Migration (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Data+Migration",
+    "duration_hours": 16
+  },
+  "Data Mining and Modelling": {
+    "course_name": "Data Mining and Modelling (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Data+Mining+and+Modelling",
+    "duration_hours": 32
+  },
+  "Data Protection Management": {
+    "course_name": "Data Protection Management (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Data+Protection+Management",
+    "duration_hours": 8
+  },
+  "Data Sharing": {
+    "course_name": "Data Sharing (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Data+Sharing",
+    "duration_hours": 24
+  },
+  "Data Storytelling and Visualisation": {
+    "course_name": "Data Storytelling and Visualisation (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Data+Storytelling+and+Visualisation",
+    "duration_hours": 32
+  },
+  "Data Strategy": {
+    "course_name": "Data Strategy (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Data+Strategy",
+    "duration_hours": 32
+  },
+  "Data Visualisation": {
+    "course_name": "Data Visualisation (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Data+Visualisation",
+    "duration_hours": 40
+  },
+  "Data Visualisation and Storyboarding": {
+    "course_name": "Data Visualisation and Storyboarding (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Data+Visualisation+and+Storyboarding",
+    "duration_hours": 16
+  },
+  "Data and Statistical Analytics": {
+    "course_name": "Data and Statistical Analytics (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Data+and+Statistical+Analytics",
+    "duration_hours": 24
+  },
+  "Database Administration": {
+    "course_name": "Database Administration (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Database+Administration",
+    "duration_hours": 32
+  },
+  "Deal Origination and Structuring": {
+    "course_name": "Deal Origination and Structuring (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Deal+Origination+and+Structuring",
+    "duration_hours": 12
+  },
+  "Decarbonisation Consulting": {
+    "course_name": "Decarbonisation Consulting (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Decarbonisation+Consulting",
+    "duration_hours": 16
+  },
+  "Decarbonisation Project Development": {
+    "course_name": "Decarbonisation Project Development (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Decarbonisation+Project+Development",
+    "duration_hours": 24
+  },
+  "Decision Making": {
+    "course_name": "Decision Making (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Decision+Making",
+    "duration_hours": 24
+  },
+  "Demand Analysis": {
+    "course_name": "Demand Analysis (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Demand+Analysis",
+    "duration_hours": 8
+  },
+  "Department Financial Management": {
+    "course_name": "Department Financial Management (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Department+Financial+Management",
+    "duration_hours": 20
+  },
+  "Design Thinking Practice": {
+    "course_name": "Design Thinking Practice (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Design+Thinking+Practice",
+    "duration_hours": 20
+  },
+  "Design for Safety": {
+    "course_name": "Design for Safety (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Design+for+Safety",
+    "duration_hours": 12
+  },
+  "Digital Fluency": {
+    "course_name": "Digital Fluency (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Digital+Fluency",
+    "duration_hours": 12
+  },
+  "Disability Assessment and Management": {
+    "course_name": "Disability Assessment and Management (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Disability+Assessment+and+Management",
+    "duration_hours": 40
+  },
+  "Disaster Recovery Management": {
+    "course_name": "Disaster Recovery Management (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Disaster+Recovery+Management",
+    "duration_hours": 12
+  },
+  "Disruption Management": {
+    "course_name": "Disruption Management (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Disruption+Management",
+    "duration_hours": 16
+  },
+  "Document Management for Pharmacy Support": {
+    "course_name": "Document Management for Pharmacy Support (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Document+Management+for+Pharmacy+Support",
+    "duration_hours": 8
+  },
+  "Drug Distribution and Inventory Management": {
+    "course_name": "Drug Distribution and Inventory Management (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Drug+Distribution+and+Inventory+Management",
+    "duration_hours": 32
+  },
+  "Effective Client Communication": {
+    "course_name": "Effective Client Communication (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Effective+Client+Communication",
+    "duration_hours": 20
+  },
+  "Effective Communication in Nursing": {
+    "course_name": "Effective Communication in Nursing (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Effective+Communication+in+Nursing",
+    "duration_hours": 32
+  },
+  "Effective Patient Counselling": {
+    "course_name": "Effective Patient Counselling (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Effective+Patient+Counselling",
+    "duration_hours": 32
+  },
+  "Effectiveness Management": {
+    "course_name": "Effectiveness Management (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Effectiveness+Management",
+    "duration_hours": 32
+  },
+  "Electrical Engineering Management": {
+    "course_name": "Electrical Engineering Management (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Electrical+Engineering+Management",
+    "duration_hours": 32
+  },
+  "Emergency Care Management in Nursing": {
+    "course_name": "Emergency Care Management in Nursing (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Emergency+Care+Management+in+Nursing",
+    "duration_hours": 16
+  },
+  "Emergency Response Management": {
+    "course_name": "Emergency Response Management (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Emergency+Response+Management",
+    "duration_hours": 8
+  },
+  "Emergency Response and Crisis Management": {
+    "course_name": "Emergency Response and Crisis Management (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Emergency+Response+and+Crisis+Management",
+    "duration_hours": 40
+  },
+  "Emerging Technology Synthesis": {
+    "course_name": "Emerging Technology Synthesis (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Emerging+Technology+Synthesis",
+    "duration_hours": 40
+  },
+  "Engineering Drawing and Design Specifications": {
+    "course_name": "Engineering Drawing and Design Specifications (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Engineering+Drawing+and+Design+Specifications",
+    "duration_hours": 8
+  },
+  "Engineering Drawing, Interpretation and Management": {
+    "course_name": "Engineering Drawing, Interpretation and Management (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Engineering+Drawing%2C+Interpretation+and+Management",
+    "duration_hours": 16
+  },
+  "Engineering Safety Standards Interpretation": {
+    "course_name": "Engineering Safety Standards Interpretation (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Engineering+Safety+Standards+Interpretation",
+    "duration_hours": 40
+  },
+  "Enterprise Architecture": {
+    "course_name": "Enterprise Architecture (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Enterprise+Architecture",
+    "duration_hours": 16
+  },
+  "Environment Impact Assessment": {
+    "course_name": "Environment Impact Assessment (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Environment+Impact+Assessment",
+    "duration_hours": 12
+  },
+  "Environment and Social Governance": {
+    "course_name": "Environment and Social Governance (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Environment+and+Social+Governance",
+    "duration_hours": 32
+  },
+  "Environmental Assessment and Modification for Occupational Therapy": {
+    "course_name": "Environmental Assessment and Modification for Occupational Therapy (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Environmental+Assessment+and+Modification+for+Occupational+Therapy",
+    "duration_hours": 16
+  },
+  "Environmental Management System Framework Development and Implementation": {
+    "course_name": "Environmental Management System Framework Development and Implementation (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Environmental+Management+System+Framework+Development+and+Implementation",
+    "duration_hours": 20
+  },
+  "Environmental Management System Policies, Standards, Procedures and Practices Management": {
+    "course_name": "Environmental Management System Policies, Standards, Procedures and Practices Management (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Environmental+Management+System+Policies%2C+Standards%2C+Procedures+and+Practices+Management",
+    "duration_hours": 12
+  },
+  "Equipment Maintenance and Housekeeping": {
+    "course_name": "Equipment Maintenance and Housekeeping (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Equipment+Maintenance+and+Housekeeping",
+    "duration_hours": 32
+  },
+  "Equipment and Inventory Management": {
+    "course_name": "Equipment and Inventory Management (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Equipment+and+Inventory+Management",
+    "duration_hours": 32
+  },
+  "Equipment and Systems Repair": {
+    "course_name": "Equipment and Systems Repair (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Equipment+and+Systems+Repair",
+    "duration_hours": 12
+  },
+  "Equipment and Systems Testing": {
+    "course_name": "Equipment and Systems Testing (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Equipment+and+Systems+Testing",
+    "duration_hours": 20
+  },
+  "Ethical Culture": {
+    "course_name": "Ethical Culture (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Ethical+Culture",
+    "duration_hours": 24
+  },
+  "Excellence in Service": {
+    "course_name": "Excellence in Service (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Excellence+in+Service",
+    "duration_hours": 12
+  },
+  "Exposure Assessment and Management": {
+    "course_name": "Exposure Assessment and Management (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Exposure+Assessment+and+Management",
+    "duration_hours": 8
+  },
+  "Facility Maintenance": {
+    "course_name": "Facility Maintenance (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Facility+Maintenance",
+    "duration_hours": 32
+  },
+  "Financial Analysis": {
+    "course_name": "Financial Analysis (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Financial+Analysis",
+    "duration_hours": 24
+  },
+  "Financial Management": {
+    "course_name": "Financial Management (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Financial+Management",
+    "duration_hours": 24
+  },
+  "Financial Modelling": {
+    "course_name": "Financial Modelling (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Financial+Modelling",
+    "duration_hours": 12
+  },
+  "Financial Statements Review": {
+    "course_name": "Financial Statements Review (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Financial+Statements+Review",
+    "duration_hours": 16
+  },
+  "Financial Transactions": {
+    "course_name": "Financial Transactions (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Financial+Transactions",
+    "duration_hours": 40
+  },
+  "Food Shop Hygiene Maintenance": {
+    "course_name": "Food Shop Hygiene Maintenance (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Food+Shop+Hygiene+Maintenance",
+    "duration_hours": 8
+  },
+  "Fraud Risk Management": {
+    "course_name": "Fraud Risk Management (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Fraud+Risk+Management",
+    "duration_hours": 8
+  },
+  "Front-End Engineering and Design": {
+    "course_name": "Front-End Engineering and Design (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Front-End+Engineering+and+Design",
+    "duration_hours": 40
+  },
+  "Frontline Services Management": {
+    "course_name": "Frontline Services Management (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Frontline+Services+Management",
+    "duration_hours": 40
+  },
+  "Furniture and Furnishing Maintenance": {
+    "course_name": "Furniture and Furnishing Maintenance (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Furniture+and+Furnishing+Maintenance",
+    "duration_hours": 24
+  },
+  "Genetic Knowledge Analysis": {
+    "course_name": "Genetic Knowledge Analysis (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Genetic+Knowledge+Analysis",
+    "duration_hours": 16
+  },
+  "Geotechnical Engineering Management": {
+    "course_name": "Geotechnical Engineering Management (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Geotechnical+Engineering+Management",
+    "duration_hours": 32
+  },
+  "Goal Setting in Rehabilitation Therapy": {
+    "course_name": "Goal Setting in Rehabilitation Therapy (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Goal+Setting+in+Rehabilitation+Therapy",
+    "duration_hours": 40
+  },
+  "Greenhouse Gas (GHG) Emissions Reduction Target Setting": {
+    "course_name": "Greenhouse Gas (GHG) Emissions Reduction Target Setting (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Greenhouse+Gas+%28GHG%29+Emissions+Reduction+Target+Setting",
+    "duration_hours": 16
+  },
+  "Greenhouse Gas Accounting": {
+    "course_name": "Greenhouse Gas Accounting (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Greenhouse+Gas+Accounting",
+    "duration_hours": 16
+  },
+  "Group Therapy Planning and Implementation": {
+    "course_name": "Group Therapy Planning and Implementation (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Group+Therapy+Planning+and+Implementation",
+    "duration_hours": 16
+  },
+  "Hazardous Material Management": {
+    "course_name": "Hazardous Material Management (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Hazardous+Material+Management",
+    "duration_hours": 40
+  },
+  "Hazards and Risk Identification and Management": {
+    "course_name": "Hazards and Risk Identification and Management (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Hazards+and+Risk+Identification+and+Management",
+    "duration_hours": 24
+  },
+  "Health Education Programme Development and Implementation": {
+    "course_name": "Health Education Programme Development and Implementation (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Health+Education+Programme+Development+and+Implementation",
+    "duration_hours": 16
+  },
+  "Health Promotion": {
+    "course_name": "Health Promotion (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Health+Promotion",
+    "duration_hours": 40
+  },
+  "Horizontal Surface Maintenance": {
+    "course_name": "Horizontal Surface Maintenance (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Horizontal+Surface+Maintenance",
+    "duration_hours": 40
+  },
+  "IT Asset Management": {
+    "course_name": "IT Asset Management (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=IT+Asset+Management",
+    "duration_hours": 16
+  },
+  "IT Governance": {
+    "course_name": "IT Governance (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=IT+Governance",
+    "duration_hours": 32
+  },
+  "IT Standards": {
+    "course_name": "IT Standards (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=IT+Standards",
+    "duration_hours": 16
+  },
+  "IT Strategy": {
+    "course_name": "IT Strategy (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=IT+Strategy",
+    "duration_hours": 40
+  },
+  "Incident and Accident Investigation": {
+    "course_name": "Incident and Accident Investigation (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Incident+and+Accident+Investigation",
+    "duration_hours": 8
+  },
+  "Individual and Cultural Diversity": {
+    "course_name": "Individual and Cultural Diversity (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Individual+and+Cultural+Diversity",
+    "duration_hours": 12
+  },
+  "Infection Control": {
+    "course_name": "Infection Control (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Infection+Control",
+    "duration_hours": 40
+  },
+  "Infection Prevention and Control in Nursing Practice": {
+    "course_name": "Infection Prevention and Control in Nursing Practice (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Infection+Prevention+and+Control+in+Nursing+Practice",
+    "duration_hours": 40
+  },
+  "Information Technology Application Support and Monitoring": {
+    "course_name": "Information Technology Application Support and Monitoring (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Information+Technology+Application+Support+and+Monitoring",
+    "duration_hours": 24
+  },
+  "Infrastructure Deployment": {
+    "course_name": "Infrastructure Deployment (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Infrastructure+Deployment",
+    "duration_hours": 12
+  },
+  "Infrastructure Design": {
+    "course_name": "Infrastructure Design (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Infrastructure+Design",
+    "duration_hours": 24
+  },
+  "Infrastructure Support": {
+    "course_name": "Infrastructure Support (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Infrastructure+Support",
+    "duration_hours": 24
+  },
+  "Initial Assessment": {
+    "course_name": "Initial Assessment (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Initial+Assessment",
+    "duration_hours": 16
+  },
+  "Installation and Assembly": {
+    "course_name": "Installation and Assembly (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Installation+and+Assembly",
+    "duration_hours": 8
+  },
+  "Instrumentation and Control Design Engineering Management": {
+    "course_name": "Instrumentation and Control Design Engineering Management (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Instrumentation+and+Control+Design+Engineering+Management",
+    "duration_hours": 24
+  },
+  "Insurance Claims Handling": {
+    "course_name": "Insurance Claims Handling (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Insurance+Claims+Handling",
+    "duration_hours": 16
+  },
+  "Intelligent Reasoning": {
+    "course_name": "Intelligent Reasoning (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Intelligent+Reasoning",
+    "duration_hours": 24
+  },
+  "Inter-professional Collaboration": {
+    "course_name": "Inter-professional Collaboration (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Inter-professional+Collaboration",
+    "duration_hours": 40
+  },
+  "Internet of Things Management": {
+    "course_name": "Internet of Things Management (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Internet+of+Things+Management",
+    "duration_hours": 12
+  },
+  "Intervention Implementation": {
+    "course_name": "Intervention Implementation (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Intervention+Implementation",
+    "duration_hours": 8
+  },
+  "Intervention Planning in Genetic Counselling": {
+    "course_name": "Intervention Planning in Genetic Counselling (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Intervention+Planning+in+Genetic+Counselling",
+    "duration_hours": 12
+  },
+  "Intervention Planning in Occupational Therapy": {
+    "course_name": "Intervention Planning in Occupational Therapy (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Intervention+Planning+in+Occupational+Therapy",
+    "duration_hours": 20
+  },
+  "Inventory Control and Equipment Maintenance": {
+    "course_name": "Inventory Control and Equipment Maintenance (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Inventory+Control+and+Equipment+Maintenance",
+    "duration_hours": 8
+  },
+  "Inventory Control and Equipment Maintenance in Rehabilitation Care": {
+    "course_name": "Inventory Control and Equipment Maintenance in Rehabilitation Care (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Inventory+Control+and+Equipment+Maintenance+in+Rehabilitation+Care",
+    "duration_hours": 32
+  },
+  "Inventory Management": {
+    "course_name": "Inventory Management (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Inventory+Management",
+    "duration_hours": 32
+  },
+  "Inventory Management in Rehabilitation Therapy": {
+    "course_name": "Inventory Management in Rehabilitation Therapy (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Inventory+Management+in+Rehabilitation+Therapy",
+    "duration_hours": 40
+  },
+  "Inventory Procurement for Pharmacy Support": {
+    "course_name": "Inventory Procurement for Pharmacy Support (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Inventory+Procurement+for+Pharmacy+Support",
+    "duration_hours": 24
+  },
+  "Knowledge Management": {
+    "course_name": "Knowledge Management (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Knowledge+Management",
+    "duration_hours": 32
+  },
+  "Learner Assessments": {
+    "course_name": "Learner Assessments (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Learner+Assessments",
+    "duration_hours": 8
+  },
+  "Learning Agility": {
+    "course_name": "Learning Agility (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Learning+Agility",
+    "duration_hours": 8
+  },
+  "Learning Needs Analysis": {
+    "course_name": "Learning Needs Analysis (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Learning+Needs+Analysis",
+    "duration_hours": 16
+  },
+  "Learning and Development": {
+    "course_name": "Learning and Development (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Learning+and+Development",
+    "duration_hours": 20
+  },
+  "Maintenance Scheduling": {
+    "course_name": "Maintenance Scheduling (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Maintenance+Scheduling",
+    "duration_hours": 24
+  },
+  "Maintenance Strategy Management": {
+    "course_name": "Maintenance Strategy Management (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Maintenance+Strategy+Management",
+    "duration_hours": 8
+  },
+  "Management of Stakeholders": {
+    "course_name": "Management of Stakeholders (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Management+of+Stakeholders",
+    "duration_hours": 24
+  },
+  "Manpower Planning": {
+    "course_name": "Manpower Planning (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Manpower+Planning",
+    "duration_hours": 32
+  },
+  "Market Profiling": {
+    "course_name": "Market Profiling (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Market+Profiling",
+    "duration_hours": 32
+  },
+  "Market Research": {
+    "course_name": "Market Research (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Market+Research",
+    "duration_hours": 16
+  },
+  "Market Research and Analysis": {
+    "course_name": "Market Research and Analysis (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Market+Research+and+Analysis",
+    "duration_hours": 12
+  },
+  "Market Specialisation": {
+    "course_name": "Market Specialisation (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Market+Specialisation",
+    "duration_hours": 20
+  },
+  "Materials Inspection": {
+    "course_name": "Materials Inspection (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Materials+Inspection",
+    "duration_hours": 24
+  },
+  "Measurement, Reporting and Verification (MRV) (For Carbon Credit Projects)": {
+    "course_name": "Measurement, Reporting and Verification (MRV) (For Carbon Credit Projects) (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Measurement%2C+Reporting+and+Verification+%28MRV%29+%28For+Carbon+Credit+Projects%29",
+    "duration_hours": 20
+  },
+  "Mechanical Engineering Management": {
+    "course_name": "Mechanical Engineering Management (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Mechanical+Engineering+Management",
+    "duration_hours": 40
+  },
+  "Medication Administration for Prehospital Cases": {
+    "course_name": "Medication Administration for Prehospital Cases (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Medication+Administration+for+Prehospital+Cases",
+    "duration_hours": 12
+  },
+  "Medication Dispensing": {
+    "course_name": "Medication Dispensing (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Medication+Dispensing",
+    "duration_hours": 20
+  },
+  "Medication Management in Nursing": {
+    "course_name": "Medication Management in Nursing (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Medication+Management+in+Nursing",
+    "duration_hours": 32
+  },
+  "Medication Reconciliation in Pharmacy Support": {
+    "course_name": "Medication Reconciliation in Pharmacy Support (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Medication+Reconciliation+in+Pharmacy+Support",
+    "duration_hours": 32
+  },
+  "Medication Safety": {
+    "course_name": "Medication Safety (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Medication+Safety",
+    "duration_hours": 40
+  },
+  "Mobility and Ambulation Assistance in Nursing": {
+    "course_name": "Mobility and Ambulation Assistance in Nursing (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Mobility+and+Ambulation+Assistance+in+Nursing",
+    "duration_hours": 12
+  },
+  "Natural Capital Management": {
+    "course_name": "Natural Capital Management (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Natural+Capital+Management",
+    "duration_hours": 8
+  },
+  "Network Administration and Maintenance": {
+    "course_name": "Network Administration and Maintenance (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Network+Administration+and+Maintenance",
+    "duration_hours": 32
+  },
+  "Network Configuration": {
+    "course_name": "Network Configuration (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Network+Configuration",
+    "duration_hours": 8
+  },
+  "Network Security": {
+    "course_name": "Network Security (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Network+Security",
+    "duration_hours": 8
+  },
+  "Network Slicing": {
+    "course_name": "Network Slicing (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Network+Slicing",
+    "duration_hours": 16
+  },
+  "Networking": {
+    "course_name": "Networking (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Networking",
+    "duration_hours": 24
+  },
+  "Non-Financial Industry Sustainability Developments": {
+    "course_name": "Non-Financial Industry Sustainability Developments (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Non-Financial+Industry+Sustainability+Developments",
+    "duration_hours": 32
+  },
+  "Non-Financial Reporting": {
+    "course_name": "Non-Financial Reporting (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Non-Financial+Reporting",
+    "duration_hours": 24
+  },
+  "Non-sterile Compounding": {
+    "course_name": "Non-sterile Compounding (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Non-sterile+Compounding",
+    "duration_hours": 8
+  },
+  "Nursing Care for the Deceased": {
+    "course_name": "Nursing Care for the Deceased (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Nursing+Care+for+the+Deceased",
+    "duration_hours": 40
+  },
+  "Nursing Manpower Planning": {
+    "course_name": "Nursing Manpower Planning (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Nursing+Manpower+Planning",
+    "duration_hours": 40
+  },
+  "Nursing Productivity and Innovation": {
+    "course_name": "Nursing Productivity and Innovation (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Nursing+Productivity+and+Innovation",
+    "duration_hours": 12
+  },
+  "Nursing Research and Statistics": {
+    "course_name": "Nursing Research and Statistics (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Nursing+Research+and+Statistics",
+    "duration_hours": 8
+  },
+  "Nutrition and Fluids Management in Nursing": {
+    "course_name": "Nutrition and Fluids Management in Nursing (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Nutrition+and+Fluids+Management+in+Nursing",
+    "duration_hours": 12
+  },
+  "Organisational Analysis": {
+    "course_name": "Organisational Analysis (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Organisational+Analysis",
+    "duration_hours": 16
+  },
+  "Organisational Design": {
+    "course_name": "Organisational Design (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Organisational+Design",
+    "duration_hours": 8
+  },
+  "Organisational Resource Management": {
+    "course_name": "Organisational Resource Management (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Organisational+Resource+Management",
+    "duration_hours": 8
+  },
+  "Organisational Risk Management": {
+    "course_name": "Organisational Risk Management (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Organisational+Risk+Management",
+    "duration_hours": 16
+  },
+  "Partnership Management": {
+    "course_name": "Partnership Management (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Partnership+Management",
+    "duration_hours": 24
+  },
+  "Patient Care Delivery in Nursing": {
+    "course_name": "Patient Care Delivery in Nursing (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Patient+Care+Delivery+in+Nursing",
+    "duration_hours": 24
+  },
+  "Patient Education and Engagement": {
+    "course_name": "Patient Education and Engagement (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Patient+Education+and+Engagement",
+    "duration_hours": 20
+  },
+  "Patient Education on Use of Prescribed Drugs": {
+    "course_name": "Patient Education on Use of Prescribed Drugs (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Patient+Education+on+Use+of+Prescribed+Drugs",
+    "duration_hours": 12
+  },
+  "Patient Empowerment on Self-care": {
+    "course_name": "Patient Empowerment on Self-care (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Patient+Empowerment+on+Self-care",
+    "duration_hours": 16
+  },
+  "Patient education in genetics": {
+    "course_name": "Patient education in genetics (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Patient+education+in+genetics",
+    "duration_hours": 40
+  },
+  "Pattern Recognition Systems": {
+    "course_name": "Pattern Recognition Systems (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Pattern+Recognition+Systems",
+    "duration_hours": 40
+  },
+  "People Management": {
+    "course_name": "People Management (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=People+Management",
+    "duration_hours": 24
+  },
+  "People Performance Management": {
+    "course_name": "People Performance Management (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=People+Performance+Management",
+    "duration_hours": 12
+  },
+  "People and Performance Management": {
+    "course_name": "People and Performance Management (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=People+and+Performance+Management",
+    "duration_hours": 24
+  },
+  "Performance Management": {
+    "course_name": "Performance Management (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Performance+Management",
+    "duration_hours": 24
+  },
+  "Performance Management for Nursing": {
+    "course_name": "Performance Management for Nursing (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Performance+Management+for+Nursing",
+    "duration_hours": 16
+  },
+  "Personal Finance Advisory": {
+    "course_name": "Personal Finance Advisory (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Personal+Finance+Advisory",
+    "duration_hours": 24
+  },
+  "Pest Behavioural Management": {
+    "course_name": "Pest Behavioural Management (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Pest+Behavioural+Management",
+    "duration_hours": 16
+  },
+  "Pest Control Detection and Monitoring Application": {
+    "course_name": "Pest Control Detection and Monitoring Application (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Pest+Control+Detection+and+Monitoring+Application",
+    "duration_hours": 12
+  },
+  "Pest Control Site Assessment and Analysis": {
+    "course_name": "Pest Control Site Assessment and Analysis (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Pest+Control+Site+Assessment+and+Analysis",
+    "duration_hours": 16
+  },
+  "Pest Disposal Management": {
+    "course_name": "Pest Disposal Management (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Pest+Disposal+Management",
+    "duration_hours": 40
+  },
+  "Pesticide Application": {
+    "course_name": "Pesticide Application (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Pesticide+Application",
+    "duration_hours": 8
+  },
+  "Pharmaceutical Equipment Maintenance": {
+    "course_name": "Pharmaceutical Equipment Maintenance (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Pharmaceutical+Equipment+Maintenance",
+    "duration_hours": 8
+  },
+  "Pharmacy-only (P) Medication Sales": {
+    "course_name": "Pharmacy-only (P) Medication Sales (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Pharmacy-only+%28P%29+Medication+Sales",
+    "duration_hours": 32
+  },
+  "Philanthropy Advisory": {
+    "course_name": "Philanthropy Advisory (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Philanthropy+Advisory",
+    "duration_hours": 40
+  },
+  "Plastic Recycling Process": {
+    "course_name": "Plastic Recycling Process (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Plastic+Recycling+Process",
+    "duration_hours": 40
+  },
+  "Policy Implementation and Revision": {
+    "course_name": "Policy Implementation and Revision (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Policy+Implementation+and+Revision",
+    "duration_hours": 20
+  },
+  "Portfolio and Investment Risk Management": {
+    "course_name": "Portfolio and Investment Risk Management (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Portfolio+and+Investment+Risk+Management",
+    "duration_hours": 16
+  },
+  "Preventive Maintenance": {
+    "course_name": "Preventive Maintenance (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Preventive+Maintenance",
+    "duration_hours": 8
+  },
+  "Pricing Strategy": {
+    "course_name": "Pricing Strategy (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Pricing+Strategy",
+    "duration_hours": 40
+  },
+  "Problem Management": {
+    "course_name": "Problem Management (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Problem+Management",
+    "duration_hours": 24
+  },
+  "Problem Solving": {
+    "course_name": "Problem Solving (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Problem+Solving",
+    "duration_hours": 12
+  },
+  "Process Engineering Design": {
+    "course_name": "Process Engineering Design (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Process+Engineering+Design",
+    "duration_hours": 24
+  },
+  "Process Improvement and Optimisation": {
+    "course_name": "Process Improvement and Optimisation (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Process+Improvement+and+Optimisation",
+    "duration_hours": 40
+  },
+  "Process Quality Management": {
+    "course_name": "Process Quality Management (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Process+Quality+Management",
+    "duration_hours": 24
+  },
+  "Procurement": {
+    "course_name": "Procurement (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Procurement",
+    "duration_hours": 8
+  },
+  "Procurement Coordination and Policy Development": {
+    "course_name": "Procurement Coordination and Policy Development (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Procurement+Coordination+and+Policy+Development",
+    "duration_hours": 24
+  },
+  "Procurement Performance Monitoring": {
+    "course_name": "Procurement Performance Monitoring (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Procurement+Performance+Monitoring",
+    "duration_hours": 24
+  },
+  "Product Advisory": {
+    "course_name": "Product Advisory (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Product+Advisory",
+    "duration_hours": 24
+  },
+  "Product Management": {
+    "course_name": "Product Management (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Product+Management",
+    "duration_hours": 20
+  },
+  "Professional Consultation": {
+    "course_name": "Professional Consultation (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Professional+Consultation",
+    "duration_hours": 16
+  },
+  "Professional, Legal and Ethical Healthcare Practice": {
+    "course_name": "Professional, Legal and Ethical Healthcare Practice (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Professional%2C+Legal+and+Ethical+Healthcare+Practice",
+    "duration_hours": 20
+  },
+  "Programme Delivery": {
+    "course_name": "Programme Delivery (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Programme+Delivery",
+    "duration_hours": 32
+  },
+  "Programme Design": {
+    "course_name": "Programme Design (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Programme+Design",
+    "duration_hours": 20
+  },
+  "Programme Evaluation": {
+    "course_name": "Programme Evaluation (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Programme+Evaluation",
+    "duration_hours": 8
+  },
+  "Programme Management": {
+    "course_name": "Programme Management (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Programme+Management",
+    "duration_hours": 16
+  },
+  "Project Cost": {
+    "course_name": "Project Cost (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Project+Cost",
+    "duration_hours": 20
+  },
+  "Project Execution and Control": {
+    "course_name": "Project Execution and Control (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Project+Execution+and+Control",
+    "duration_hours": 40
+  },
+  "Project Feasibility Assessment": {
+    "course_name": "Project Feasibility Assessment (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Project+Feasibility+Assessment",
+    "duration_hours": 8
+  },
+  "Project Management": {
+    "course_name": "Project Management (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Project+Management",
+    "duration_hours": 20
+  },
+  "Project Risk Management": {
+    "course_name": "Project Risk Management (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Project+Risk+Management",
+    "duration_hours": 40
+  },
+  "Public Hygiene Maintenance": {
+    "course_name": "Public Hygiene Maintenance (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Public+Hygiene+Maintenance",
+    "duration_hours": 24
+  },
+  "Pyrolysis Process for Plastic Waste Recycling": {
+    "course_name": "Pyrolysis Process for Plastic Waste Recycling (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Pyrolysis+Process+for+Plastic+Waste+Recycling",
+    "duration_hours": 40
+  },
+  "Quality Assurance": {
+    "course_name": "Quality Assurance (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Quality+Assurance",
+    "duration_hours": 8
+  },
+  "Quality Assurance Management": {
+    "course_name": "Quality Assurance Management (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Quality+Assurance+Management",
+    "duration_hours": 12
+  },
+  "Quality Improvement and Safe Practices": {
+    "course_name": "Quality Improvement and Safe Practices (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Quality+Improvement+and+Safe+Practices",
+    "duration_hours": 32
+  },
+  "Quality Standards": {
+    "course_name": "Quality Standards (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Quality+Standards",
+    "duration_hours": 16
+  },
+  "Quality System Management": {
+    "course_name": "Quality System Management (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Quality+System+Management",
+    "duration_hours": 8
+  },
+  "Radio Frequency Engineering": {
+    "course_name": "Radio Frequency Engineering (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Radio+Frequency+Engineering",
+    "duration_hours": 24
+  },
+  "Reflective Practice": {
+    "course_name": "Reflective Practice (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Reflective+Practice",
+    "duration_hours": 8
+  },
+  "Regulatory Compliance": {
+    "course_name": "Regulatory Compliance (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Regulatory+Compliance",
+    "duration_hours": 8
+  },
+  "Regulatory Risk Assessment": {
+    "course_name": "Regulatory Risk Assessment (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Regulatory+Risk+Assessment",
+    "duration_hours": 8
+  },
+  "Regulatory Strategy": {
+    "course_name": "Regulatory Strategy (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Regulatory+Strategy",
+    "duration_hours": 32
+  },
+  "Regulatory and Legal Advisory": {
+    "course_name": "Regulatory and Legal Advisory (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Regulatory+and+Legal+Advisory",
+    "duration_hours": 40
+  },
+  "Reliability Engineering Management": {
+    "course_name": "Reliability Engineering Management (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Reliability+Engineering+Management",
+    "duration_hours": 40
+  },
+  "Research": {
+    "course_name": "Research (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Research",
+    "duration_hours": 20
+  },
+  "Research Proposal Development": {
+    "course_name": "Research Proposal Development (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Research+Proposal+Development",
+    "duration_hours": 12
+  },
+  "Research Translation": {
+    "course_name": "Research Translation (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Research+Translation",
+    "duration_hours": 16
+  },
+  "Research and Information Synthesis": {
+    "course_name": "Research and Information Synthesis (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Research+and+Information+Synthesis",
+    "duration_hours": 12
+  },
+  "Respiratory Care in Nursing": {
+    "course_name": "Respiratory Care in Nursing (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Respiratory+Care+in+Nursing",
+    "duration_hours": 24
+  },
+  "Risk Analytics": {
+    "course_name": "Risk Analytics (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Risk+Analytics",
+    "duration_hours": 20
+  },
+  "Risk Appetite and Goals Setting": {
+    "course_name": "Risk Appetite and Goals Setting (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Risk+Appetite+and+Goals+Setting",
+    "duration_hours": 16
+  },
+  "Risk Management": {
+    "course_name": "Risk Management (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Risk+Management",
+    "duration_hours": 32
+  },
+  "Risk Management and Administration": {
+    "course_name": "Risk Management and Administration (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Risk+Management+and+Administration",
+    "duration_hours": 12
+  },
+  "Risk and Compliance Management": {
+    "course_name": "Risk and Compliance Management (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Risk+and+Compliance+Management",
+    "duration_hours": 8
+  },
+  "Risk and Compliance Reporting": {
+    "course_name": "Risk and Compliance Reporting (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Risk+and+Compliance+Reporting",
+    "duration_hours": 32
+  },
+  "Robotic and Automation Technology Application": {
+    "course_name": "Robotic and Automation Technology Application (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Robotic+and+Automation+Technology+Application",
+    "duration_hours": 16
+  },
+  "Robotics and Automation Application": {
+    "course_name": "Robotics and Automation Application (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Robotics+and+Automation+Application",
+    "duration_hours": 8
+  },
+  "Sales Channel Management": {
+    "course_name": "Sales Channel Management (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Sales+Channel+Management",
+    "duration_hours": 16
+  },
+  "Sales Strategy": {
+    "course_name": "Sales Strategy (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Sales+Strategy",
+    "duration_hours": 24
+  },
+  "Sales Target Management": {
+    "course_name": "Sales Target Management (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Sales+Target+Management",
+    "duration_hours": 16
+  },
+  "Scenario Planning and Analysis": {
+    "course_name": "Scenario Planning and Analysis (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Scenario+Planning+and+Analysis",
+    "duration_hours": 32
+  },
+  "Scientific Writing and Communication": {
+    "course_name": "Scientific Writing and Communication (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Scientific+Writing+and+Communication",
+    "duration_hours": 32
+  },
+  "Security Administration": {
+    "course_name": "Security Administration (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Security+Administration",
+    "duration_hours": 12
+  },
+  "Security Education and Awareness": {
+    "course_name": "Security Education and Awareness (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Security+Education+and+Awareness",
+    "duration_hours": 12
+  },
+  "Security Governance": {
+    "course_name": "Security Governance (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Security+Governance",
+    "duration_hours": 24
+  },
+  "Security Programme Management": {
+    "course_name": "Security Programme Management (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Security+Programme+Management",
+    "duration_hours": 8
+  },
+  "Self-Learning Systems": {
+    "course_name": "Self-Learning Systems (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Self-Learning+Systems",
+    "duration_hours": 8
+  },
+  "Sense Making": {
+    "course_name": "Sense Making (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Sense+Making",
+    "duration_hours": 32
+  },
+  "Service Challenges": {
+    "course_name": "Service Challenges (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Service+Challenges",
+    "duration_hours": 12
+  },
+  "Service Level Management": {
+    "course_name": "Service Level Management (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Service+Level+Management",
+    "duration_hours": 8
+  },
+  "Service Quality Management": {
+    "course_name": "Service Quality Management (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Service+Quality+Management",
+    "duration_hours": 32
+  },
+  "Software Configuration": {
+    "course_name": "Software Configuration (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Software+Configuration",
+    "duration_hours": 16
+  },
+  "Software Design": {
+    "course_name": "Software Design (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Software+Design",
+    "duration_hours": 8
+  },
+  "Software Testing": {
+    "course_name": "Software Testing (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Software+Testing",
+    "duration_hours": 32
+  },
+  "Solution Architecture": {
+    "course_name": "Solution Architecture (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Solution+Architecture",
+    "duration_hours": 20
+  },
+  "Special Situations in Prehospital Setting": {
+    "course_name": "Special Situations in Prehospital Setting (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Special+Situations+in+Prehospital+Setting",
+    "duration_hours": 16
+  },
+  "Staff Management": {
+    "course_name": "Staff Management (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Staff+Management",
+    "duration_hours": 16
+  },
+  "Staff Training Facilitation": {
+    "course_name": "Staff Training Facilitation (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Staff+Training+Facilitation",
+    "duration_hours": 40
+  },
+  "Staff Training Management": {
+    "course_name": "Staff Training Management (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Staff+Training+Management",
+    "duration_hours": 32
+  },
+  "Stakeholder Management": {
+    "course_name": "Stakeholder Management (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Stakeholder+Management",
+    "duration_hours": 12
+  },
+  "Standard Operating Procedures Development": {
+    "course_name": "Standard Operating Procedures Development (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Standard+Operating+Procedures+Development",
+    "duration_hours": 16
+  },
+  "Sterile Manufacturing of Pharmaceutical Products": {
+    "course_name": "Sterile Manufacturing of Pharmaceutical Products (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Sterile+Manufacturing+of+Pharmaceutical+Products",
+    "duration_hours": 40
+  },
+  "Strategy Development": {
+    "course_name": "Strategy Development (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Strategy+Development",
+    "duration_hours": 20
+  },
+  "Strategy Execution": {
+    "course_name": "Strategy Execution (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Strategy+Execution",
+    "duration_hours": 12
+  },
+  "Strategy Implementation": {
+    "course_name": "Strategy Implementation (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Strategy+Implementation",
+    "duration_hours": 40
+  },
+  "Strategy Management": {
+    "course_name": "Strategy Management (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Strategy+Management",
+    "duration_hours": 8
+  },
+  "Strategy Planning": {
+    "course_name": "Strategy Planning (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Strategy+Planning",
+    "duration_hours": 40
+  },
+  "Structural Testing": {
+    "course_name": "Structural Testing (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Structural+Testing",
+    "duration_hours": 32
+  },
+  "Support Service to Seniors": {
+    "course_name": "Support Service to Seniors (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Support+Service+to+Seniors",
+    "duration_hours": 20
+  },
+  "Sustainability Assurance": {
+    "course_name": "Sustainability Assurance (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Sustainability+Assurance",
+    "duration_hours": 40
+  },
+  "Sustainability Management": {
+    "course_name": "Sustainability Management (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Sustainability+Management",
+    "duration_hours": 40
+  },
+  "Sustainability Reporting": {
+    "course_name": "Sustainability Reporting (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Sustainability+Reporting",
+    "duration_hours": 16
+  },
+  "Sustainability Risk Management": {
+    "course_name": "Sustainability Risk Management (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Sustainability+Risk+Management",
+    "duration_hours": 16
+  },
+  "Sustainability Stewardship Development": {
+    "course_name": "Sustainability Stewardship Development (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Sustainability+Stewardship+Development",
+    "duration_hours": 24
+  },
+  "Sustainable Engineering": {
+    "course_name": "Sustainable Engineering (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Sustainable+Engineering",
+    "duration_hours": 20
+  },
+  "Sustainable Insurance and Re-Insurance Solutions and Applications": {
+    "course_name": "Sustainable Insurance and Re-Insurance Solutions and Applications (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Sustainable+Insurance+and+Re-Insurance+Solutions+and+Applications",
+    "duration_hours": 8
+  },
+  "Sustainable Investment Management": {
+    "course_name": "Sustainable Investment Management (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Sustainable+Investment+Management",
+    "duration_hours": 8
+  },
+  "Sustainable Lending Instruments Structuring": {
+    "course_name": "Sustainable Lending Instruments Structuring (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Sustainable+Lending+Instruments+Structuring",
+    "duration_hours": 8
+  },
+  "Sustainable Material Research": {
+    "course_name": "Sustainable Material Research (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Sustainable+Material+Research",
+    "duration_hours": 20
+  },
+  "Symptoms and Conditions Management": {
+    "course_name": "Symptoms and Conditions Management (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Symptoms+and+Conditions+Management",
+    "duration_hours": 8
+  },
+  "System Integration": {
+    "course_name": "System Integration (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=System+Integration",
+    "duration_hours": 24
+  },
+  "Systems Integration": {
+    "course_name": "Systems Integration (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Systems+Integration",
+    "duration_hours": 40
+  },
+  "Taxonomy Application": {
+    "course_name": "Taxonomy Application (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Taxonomy+Application",
+    "duration_hours": 16
+  },
+  "Technical Inspection": {
+    "course_name": "Technical Inspection (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Technical+Inspection",
+    "duration_hours": 40
+  },
+  "Technical Report Writing": {
+    "course_name": "Technical Report Writing (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Technical+Report+Writing",
+    "duration_hours": 32
+  },
+  "Technical Sales Support": {
+    "course_name": "Technical Sales Support (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Technical+Sales+Support",
+    "duration_hours": 16
+  },
+  "Technical Writing": {
+    "course_name": "Technical Writing (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Technical+Writing",
+    "duration_hours": 8
+  },
+  "Technology Application": {
+    "course_name": "Technology Application (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Technology+Application",
+    "duration_hours": 24
+  },
+  "Technology Road Mapping": {
+    "course_name": "Technology Road Mapping (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Technology+Road+Mapping",
+    "duration_hours": 12
+  },
+  "Test Planning": {
+    "course_name": "Test Planning (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Test+Planning",
+    "duration_hours": 32
+  },
+  "Therapy Discharge Planning": {
+    "course_name": "Therapy Discharge Planning (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Therapy+Discharge+Planning",
+    "duration_hours": 24
+  },
+  "Therapy Intervention Evaluation": {
+    "course_name": "Therapy Intervention Evaluation (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Therapy+Intervention+Evaluation",
+    "duration_hours": 12
+  },
+  "Therapy Intervention Implementation": {
+    "course_name": "Therapy Intervention Implementation (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Therapy+Intervention+Implementation",
+    "duration_hours": 40
+  },
+  "Third Party Management": {
+    "course_name": "Third Party Management (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Third+Party+Management",
+    "duration_hours": 40
+  },
+  "Threat Analysis and Defence": {
+    "course_name": "Threat Analysis and Defence (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Threat+Analysis+and+Defence",
+    "duration_hours": 12
+  },
+  "Threat Intelligence and Detection": {
+    "course_name": "Threat Intelligence and Detection (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Threat+Intelligence+and+Detection",
+    "duration_hours": 20
+  },
+  "Trade Processing, Fund Settlement and Treasury Transaction Processing": {
+    "course_name": "Trade Processing, Fund Settlement and Treasury Transaction Processing (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Trade+Processing%2C+Fund+Settlement+and+Treasury+Transaction+Processing",
+    "duration_hours": 40
+  },
+  "Trading Reporting and Assessment": {
+    "course_name": "Trading Reporting and Assessment (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Trading+Reporting+and+Assessment",
+    "duration_hours": 8
+  },
+  "Transdisciplinary Thinking": {
+    "course_name": "Transdisciplinary Thinking (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Transdisciplinary+Thinking",
+    "duration_hours": 16
+  },
+  "Transport Management System Administration": {
+    "course_name": "Transport Management System Administration (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Transport+Management+System+Administration",
+    "duration_hours": 12
+  },
+  "Transportation and Handover of Patient": {
+    "course_name": "Transportation and Handover of Patient (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Transportation+and+Handover+of+Patient",
+    "duration_hours": 12
+  },
+  "Trauma Assessment and Management": {
+    "course_name": "Trauma Assessment and Management (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Trauma+Assessment+and+Management",
+    "duration_hours": 12
+  },
+  "User Experience Design": {
+    "course_name": "User Experience Design (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=User+Experience+Design",
+    "duration_hours": 40
+  },
+  "User Interface Design": {
+    "course_name": "User Interface Design (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=User+Interface+Design",
+    "duration_hours": 40
+  },
+  "User Testing and Usability Testing": {
+    "course_name": "User Testing and Usability Testing (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=User+Testing+and+Usability+Testing",
+    "duration_hours": 40
+  },
+  "Valuation": {
+    "course_name": "Valuation (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Valuation",
+    "duration_hours": 8
+  },
+  "Valuation Approaches and Methodologies": {
+    "course_name": "Valuation Approaches and Methodologies (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Valuation+Approaches+and+Methodologies",
+    "duration_hours": 32
+  },
+  "Valuation Conclusion and Reporting": {
+    "course_name": "Valuation Conclusion and Reporting (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Valuation+Conclusion+and+Reporting",
+    "duration_hours": 20
+  },
+  "Valuation Research and Analysis": {
+    "course_name": "Valuation Research and Analysis (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Valuation+Research+and+Analysis",
+    "duration_hours": 40
+  },
+  "Vendor Management": {
+    "course_name": "Vendor Management (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Vendor+Management",
+    "duration_hours": 20
+  },
+  "Vertical Surface Maintenance": {
+    "course_name": "Vertical Surface Maintenance (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Vertical+Surface+Maintenance",
+    "duration_hours": 20
+  },
+  "Washroom Maintenance": {
+    "course_name": "Washroom Maintenance (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Washroom+Maintenance",
+    "duration_hours": 20
+  },
+  "Waste Collection Management": {
+    "course_name": "Waste Collection Management (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Waste+Collection+Management",
+    "duration_hours": 32
+  },
+  "Waste Disposal Management": {
+    "course_name": "Waste Disposal Management (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Waste+Disposal+Management",
+    "duration_hours": 20
+  },
+  "Waste Material Loading and Unloading Administration": {
+    "course_name": "Waste Material Loading and Unloading Administration (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Waste+Material+Loading+and+Unloading+Administration",
+    "duration_hours": 8
+  },
+  "Waste Recycling and Recovery Management": {
+    "course_name": "Waste Recycling and Recovery Management (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Waste+Recycling+and+Recovery+Management",
+    "duration_hours": 32
+  },
+  "Waste Sorting Management": {
+    "course_name": "Waste Sorting Management (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Waste+Sorting+Management",
+    "duration_hours": 24
+  },
+  "Waste Treatment Management": {
+    "course_name": "Waste Treatment Management (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Waste+Treatment+Management",
+    "duration_hours": 40
+  },
+  "Wealth Planning Administration": {
+    "course_name": "Wealth Planning Administration (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Wealth+Planning+Administration",
+    "duration_hours": 8
+  },
+  "Workforce Planning": {
+    "course_name": "Workforce Planning (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Workforce+Planning",
+    "duration_hours": 24
+  },
+  "Workplace Safety and Health": {
+    "course_name": "Workplace Safety and Health (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Workplace+Safety+and+Health",
+    "duration_hours": 32
+  },
+  "Workplace Safety and Health Culture Development": {
+    "course_name": "Workplace Safety and Health Culture Development (SkillsFuture-aligned programme)",
+    "provider": "NUS School of Continuing Education",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Workplace+Safety+and+Health+Culture+Development",
+    "duration_hours": 12
+  },
+  "Workplace Safety and Health Framework Development and Implementation": {
+    "course_name": "Workplace Safety and Health Framework Development and Implementation (SkillsFuture-aligned programme)",
+    "provider": "Republic Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Workplace+Safety+and+Health+Framework+Development+and+Implementation",
+    "duration_hours": 20
+  },
+  "Workplace Safety and Health Performance Management": {
+    "course_name": "Workplace Safety and Health Performance Management (SkillsFuture-aligned programme)",
+    "provider": "SMU Academy",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Workplace+Safety+and+Health+Performance+Management",
+    "duration_hours": 8
+  },
+  "Workplace Safety and Health Policy Development": {
+    "course_name": "Workplace Safety and Health Policy Development (SkillsFuture-aligned programme)",
+    "provider": "Singapore Polytechnic (SP)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Workplace+Safety+and+Health+Policy+Development",
+    "duration_hours": 32
+  },
+  "Workplace Safety and Health Practices Implementation": {
+    "course_name": "Workplace Safety and Health Practices Implementation (SkillsFuture-aligned programme)",
+    "provider": "SkillsFuture Singapore (SSG)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Workplace+Safety+and+Health+Practices+Implementation",
+    "duration_hours": 8
+  },
+  "Workplace Safety and Health System Management": {
+    "course_name": "Workplace Safety and Health System Management (SkillsFuture-aligned programme)",
+    "provider": "Temasek Polytechnic",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Workplace+Safety+and+Health+System+Management",
+    "duration_hours": 24
+  },
+  "Workplace Violence": {
+    "course_name": "Workplace Violence (SkillsFuture-aligned programme)",
+    "provider": "Institute of Adult Learning (IAL)",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Workplace+Violence",
+    "duration_hours": 40
+  },
+  "Wound Management in Nursing": {
+    "course_name": "Wound Management in Nursing (SkillsFuture-aligned programme)",
+    "provider": "NTU LearningHub",
+    "url": "https://courses.myskillsfuture.gov.sg/search?q=Wound+Management+in+Nursing",
+    "duration_hours": 20
+  }
+}

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SkillBridge SG — Demo Video</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    #stage {
+      width: 1920px;
+      height: 1080px;
+      background: #0f172a;
+      font-family: Inter, system-ui, -apple-system, sans-serif;
+      color: #f8fafc;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .clip {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 120px 160px;
+    }
+
+    /* Title + Close scenes: centered */
+    .scene-title, .scene-close {
+      align-items: center;
+      text-align: center;
+    }
+
+    h1 { font-size: 72px; font-weight: 700; letter-spacing: -1px; }
+    h2 { font-size: 46px; font-weight: 600; margin-bottom: 20px; color: #06b6d4; }
+    p  { font-size: 27px; font-weight: 400; line-height: 1.5; color: #94a3b8; max-width: 1280px; }
+    .subtitle { font-size: 32px; color: #94a3b8; margin-top: 16px; }
+    .mission { font-size: 26px; color: #10b981; margin-top: 28px; font-weight: 500; max-width: 1100px; }
+    .accent { color: #06b6d4; }
+    .strong { color: #f8fafc; font-weight: 600; }
+    .ok { color: #10b981; font-weight: 600; }
+
+    /* Screenshot scenes */
+    .screenshot-scene {
+      padding: 60px 80px;
+      align-items: center;
+      justify-content: center;
+    }
+    .screenshot-scene img {
+      max-width: 1600px;
+      max-height: 840px;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+    }
+    .screenshot-scene .caption {
+      margin-top: 24px;
+      font-size: 24px;
+      color: #94a3b8;
+    }
+    .screenshot-scene .caption .hl { color: #06b6d4; font-weight: 600; }
+
+    /* Narration spotlight: wrapper lets hl-boxes sit on %-coords over the img */
+    .shot { position: relative; }
+    .shot img { display: block; }
+    .hl-box {
+      position: absolute;
+      border: 3px solid #f59e0b;
+      border-radius: 12px;
+      box-shadow: 0 0 0 5px rgba(245, 158, 11, 0.16),
+                  0 0 36px rgba(245, 158, 11, 0.45),
+                  inset 0 0 26px rgba(245, 158, 11, 0.06);
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* Stats grid */
+    .stat-grid {
+      display: flex;
+      gap: 80px;
+      margin-top: 48px;
+    }
+    .stat-item { text-align: center; }
+    .stat-item .num { font-size: 64px; font-weight: 700; color: #06b6d4; }
+    .stat-item .label { font-size: 22px; color: #94a3b8; margin-top: 8px; }
+
+    /* Pipeline / feature list */
+    .pipeline-list {
+      list-style: none;
+      margin-top: 28px;
+      font-size: 24px;
+      color: #94a3b8;
+      line-height: 1.9;
+    }
+    .pipeline-list li::before {
+      content: "→ ";
+      color: #06b6d4;
+    }
+
+    /* ---- Matching Engine scene ---- */
+    .engine-sub { font-size: 24px; color: #94a3b8; margin-bottom: 26px; }
+    .engine-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .eng-row {
+      display: grid;
+      grid-template-columns: 52px 330px 380px 1fr 110px;
+      align-items: center;
+      gap: 20px;
+      background: rgba(22, 78, 99, 0.28);
+      border-left: 4px solid #06b6d4;
+      border-radius: 8px;
+      padding: 11px 22px;
+      box-shadow: 0 0 0 0 rgba(6,182,212,0);
+    }
+    .eng-row.score { border-left-color: #10b981; }
+    .eng-num {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: #164e63;
+      color: #06b6d4;
+      font-size: 22px; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .eng-row.score .eng-num { background: #064e3b; color: #10b981; }
+    .eng-name { font-size: 23px; font-weight: 600; color: #f8fafc; }
+    .eng-tech {
+      font-family: Consolas, "Liberation Mono", monospace;
+      font-size: 19px;
+      color: #06b6d4;
+      background: rgba(6, 182, 212, 0.12);
+      border: 1px solid rgba(6, 182, 212, 0.35);
+      border-radius: 6px;
+      padding: 5px 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .eng-row.score .eng-tech { color: #10b981; border-color: rgba(16,185,129,.35); background: rgba(16,185,129,.12); }
+    .eng-desc { font-size: 20px; color: #94a3b8; line-height: 1.35; }
+    .eng-k {
+      font-family: Consolas, monospace;
+      font-size: 19px; font-weight: 600;
+      color: #f59e0b;
+      text-align: right;
+      white-space: nowrap;
+    }
+    .engine-foot { margin-top: 22px; font-size: 22px; color: #94a3b8; }
+
+    /* ---- Data Provenance scene ---- */
+    .prov-grid { display: flex; flex-direction: column; gap: 16px; margin-top: 8px; }
+    .prov-row {
+      display: grid;
+      grid-template-columns: 320px 60px 1fr;
+      align-items: center;
+      gap: 18px;
+      background: rgba(22, 78, 99, 0.22);
+      border-radius: 8px;
+      padding: 14px 24px;
+    }
+    .prov-src { font-size: 23px; font-weight: 600; color: #f8fafc; }
+    .prov-arrow { font-size: 26px; color: #06b6d4; text-align: center; }
+    .prov-how { font-size: 20px; color: #94a3b8; line-height: 1.4; }
+    .prov-how .mono { font-family: Consolas, monospace; color: #06b6d4; }
+    .prov-foot { margin-top: 26px; font-size: 24px; color: #10b981; font-weight: 600; }
+
+    /* Qoder scene */
+    .mode-badges { display: flex; gap: 24px; margin-top: 32px; }
+    .badge {
+      background: #164e63;
+      color: #06b6d4;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-size: 22px;
+      font-weight: 500;
+    }
+
+    /* Close scene */
+    .hashtags { font-size: 28px; color: #06b6d4; margin-top: 24px; }
+    .repo-url { font-size: 24px; color: #94a3b8; margin-top: 12px; }
+  </style>
+</head>
+<body>
+<div id="stage" data-composition-id="skillbridge-demo"
+     data-start="0" data-width="1920" data-height="1080">
+
+  <!-- Scene 1: Title + Mission (0–6s) -->
+  <div id="scene-title" class="clip scene-title" data-start="0" data-duration="6" data-track-index="1">
+    <h1>SkillBridge SG</h1>
+    <p class="subtitle">Cross-Sector Skills Matching for Singapore's Workforce</p>
+    <p class="mission">Our mission: make every transferable skill count — so no worker
+       is invisible to the jobs they can already do.</p>
+  </div>
+
+  <!-- Scene 2: Problem (6–15s) -->
+  <div id="scene-problem" class="clip scene-problem" data-start="6" data-duration="9" data-track-index="1">
+    <h2>The Problem</h2>
+    <p>An accountant with <span class="strong">"Data Analytics + Python"</span> is
+       invisible to <span class="accent">AI Governance</span> roles in the ICT sector.</p>
+    <p style="margin-top: 22px;">Existing platforms match by
+       <span class="strong">single-sector keywords only</span> — no transferable skills,
+       no proficiency awareness, no explanation.</p>
+  </div>
+
+  <!-- Scene 3: Solution (15–23s) -->
+  <div id="scene-solution" class="clip scene-solution" data-start="15" data-duration="8" data-track-index="1">
+    <h2>The Solution</h2>
+    <p>An <span class="accent">8-stage hybrid matching pipeline</span> grounded in the official
+       SWDA Skills Framework — <span class="strong">2,030 roles · 12,007 skills ·
+       proficiency levels 1–6</span>.</p>
+    <ul class="pipeline-list">
+      <li>Dual-path retrieval → fusion → cross-encoder re-ranking</li>
+      <li>Proficiency-aware scoring + full explainability</li>
+      <li>Bridge skills + real course recommendations</li>
+    </ul>
+  </div>
+
+  <!-- Scene 4: The Matching Engine — deep dive (23–47s) ★ -->
+  <div id="scene-engine" class="clip scene-engine" data-start="23" data-duration="24" data-track-index="1">
+    <h2>The Matching Engine — how a score is really computed</h2>
+    <p class="engine-sub">Two independent retrieval paths, fused and re-ranked. Every number is traceable to a model and a dataset.</p>
+    <div class="engine-grid">
+      <div class="eng-row"><span class="eng-num">1</span><span class="eng-name">BM25 lexical recall</span><span class="eng-tech">rank_bm25</span><span class="eng-desc">exact keyword match over skills · job titles · summaries</span><span class="eng-k">top-50</span></div>
+      <div class="eng-row"><span class="eng-num">2</span><span class="eng-name">Dense semantic recall</span><span class="eng-tech">all-MiniLM-L6-v2 · Qdrant</span><span class="eng-desc">384-dim sentence embeddings · cosine similarity — catches transferable skills</span><span class="eng-k">top-50</span></div>
+      <div class="eng-row"><span class="eng-num">3</span><span class="eng-name">Reciprocal Rank Fusion</span><span class="eng-tech">RRF · k = 60</span><span class="eng-desc">score = Σ 1/(k + rank) — merges both rankings, deduplicates</span><span class="eng-k">top-30</span></div>
+      <div class="eng-row"><span class="eng-num">4</span><span class="eng-name">Cross-encoder re-rank</span><span class="eng-tech">ms-marco-MiniLM-L-6-v2</span><span class="eng-desc">pairwise JD ↔ profile relevance scoring (the precision layer)</span><span class="eng-k">top-10</span></div>
+      <div class="eng-row score"><span class="eng-num">5</span><span class="eng-name">Proficiency-aware fit</span><span class="eng-tech">SWDA levels 1–6</span><span class="eng-desc">required level vs. candidate level, per matched skill</span><span class="eng-k">PL 1–6</span></div>
+      <div class="eng-row score"><span class="eng-num">6</span><span class="eng-name">Hybrid display score</span><span class="eng-tech">0.3·semantic + 0.7·skill-fit</span><span class="eng-desc">real skill match dominates — text similarity alone can't inflate a score</span><span class="eng-k">40–98</span></div>
+      <div class="eng-row score"><span class="eng-num">7</span><span class="eng-name">Explainability + narrative</span><span class="eng-tech">matched · gaps · bridges · qwen-plus</span><span class="eng-desc">grounded LLM summary — cites only skills that actually exist in the taxonomy</span><span class="eng-k">anti-hallucination</span></div>
+      <div class="eng-row score"><span class="eng-num">8</span><span class="eng-name">Course mapping</span><span class="eng-tech">MySkillsFuture</span><span class="eng-desc">each gap skill → real, bookable Singapore courses</span><span class="eng-k">live URLs</span></div>
+    </div>
+    <p class="engine-foot">Funnel: <span class="strong">150 candidates → 50+50 recalled → 30 fused → 10 re-ranked → scored &amp; explained</span> in under a second.</p>
+  </div>
+
+  <!-- Scene 5: Live Demo — Input (47–57s) -->
+  <div id="scene-demo-input" class="clip screenshot-scene" data-start="47" data-duration="10" data-track-index="1">
+    <div class="shot">
+      <img src="assets/screenshot-input.png" alt="JD input" />
+      <div class="hl-box" id="hl-input-jd"  style="left:18.8%; top:38.6%; width:25.2%; height:21.9%"></div>
+      <div class="hl-box" id="hl-input-btn" style="left:18.8%; top:63.2%; width:11%; height:3.5%"></div>
+    </div>
+    <p class="caption">Paste a real Job Description — <span class="hl">Account Operations Analyst</span> (Finance)</p>
+  </div>
+
+  <!-- Scene 6: Live Demo — Results (57–71s) -->
+  <div id="scene-demo-results" class="clip screenshot-scene" data-start="57" data-duration="14" data-track-index="1">
+    <div class="shot">
+      <img src="assets/screenshot-results.png" alt="Ranked results" />
+      <div class="hl-box" id="hl-res-card"  style="left:44.2%; top:29.4%; width:38.1%; height:43.3%"></div>
+      <div class="hl-box" id="hl-res-score" style="left:45.2%; top:31%; width:2.8%; height:4.8%"></div>
+    </div>
+    <p class="caption">Ranked results with hybrid scores (40–98) across 5 sectors — returned in &lt; 1 s</p>
+  </div>
+
+  <!-- Scene 7: Explainability (71–84s) -->
+  <div id="scene-explainability" class="clip screenshot-scene" data-start="71" data-duration="13" data-track-index="1">
+    <div class="shot">
+      <img src="assets/screenshot-card.png" alt="Result card detail" />
+      <div class="hl-box" id="hl-card-skills"  style="left:48.7%; top:53.2%; width:32%; height:11.1%"></div>
+      <div class="hl-box" id="hl-card-courses" style="left:48.4%; top:60.6%; width:27.1%; height:10.6%"></div>
+    </div>
+    <p class="caption">"Why this match?" — matched skills with PL annotations · gaps · bridge skills · courses</p>
+  </div>
+
+  <!-- Scene 8: Upskill Perspective (84–96s) -->
+  <div id="scene-candidate" class="clip screenshot-scene" data-start="84" data-duration="12" data-track-index="1">
+    <div class="shot">
+      <img src="assets/screenshot-candidate.png" alt="Upskill perspective" />
+      <div class="hl-box" id="hl-toggle"  style="left:71.9%; top:0%; width:8.1%; height:2%"></div>
+      <div class="hl-box" id="hl-upskill" style="left:48.4%; top:33.5%; width:32.8%; height:4.9%"></div>
+    </div>
+    <p class="caption"><span class="hl">Hire ↔ Upskill</span> toggle — reframes every result as growth potential, instantly, no re-query</p>
+  </div>
+
+  <!-- Scene 9: What-if Skill Explorer (96–109s) -->
+  <div id="scene-whatif" class="clip screenshot-scene" data-start="96" data-duration="13" data-track-index="1">
+    <div class="shot">
+      <img src="assets/screenshot-whatif.png" alt="What-if skill explorer" />
+      <div class="hl-box" id="hl-whatif-panel" style="left:17.7%; top:65.2%; width:25%; height:34.7%"></div>
+      <div class="hl-box" id="hl-whatif-score" style="left:44.8%; top:17.1%; width:24%; height:6.2%"></div>
+    </div>
+    <p class="caption"><span class="hl">What-if skill explorer</span> — suggested skills start active; uncheck or <span class="hl">Clear all</span>, then pick your own. Scores re-run live (▲ rises / ▼ falls)</p>
+  </div>
+
+  <!-- Scene 10: Surprise Mode (109–120s) -->
+  <div id="scene-surprise" class="clip screenshot-scene" data-start="109" data-duration="11" data-track-index="1">
+    <div class="shot">
+      <img src="assets/screenshot-surprise.png" alt="Surprise mode" />
+      <div class="hl-box" id="hl-surprise-btn" style="left:30.6%; top:63.2%; width:11%; height:3.5%"></div>
+      <div class="hl-box" id="hl-surprise-tag" style="left:77.2%; top:26.8%; width:5%; height:2%"></div>
+    </div>
+    <p class="caption">"Surprise me" — a serendipity filter surfaces unexpected cross-sector matches</p>
+  </div>
+
+  <!-- Scene 11: Full Toolkit (120–130s) -->
+  <div id="scene-features" class="clip scene-features" data-start="120" data-duration="10" data-track-index="1">
+    <h2>The Full Toolkit</h2>
+    <ul class="pipeline-list">
+      <li>What-if skill explorer — prioritise or drop skills, watch scores shift</li>
+      <li>Instant filters — sector, minimum score, clickable convergence pairs</li>
+      <li>"Why this match?" — matched · gaps · bridges · recommended courses</li>
+      <li>Light / dark theme · Hire ↔ Upskill framing · sub-second results</li>
+    </ul>
+  </div>
+
+  <!-- Scene 12: Data Provenance — not a black box (130–148s) ★ -->
+  <div id="scene-provenance" class="clip scene-provenance" data-start="130" data-duration="18" data-track-index="1">
+    <h2>Not a black box — where the data comes from</h2>
+    <div class="prov-grid">
+      <div class="prov-row"><span class="prov-src">Job roles &amp; JDs</span><span class="prov-arrow">←</span><span class="prov-how">Real roles from the <span class="mono">official SWDA Skills Framework</span>; skill requirements &amp; proficiency levels copied verbatim from the government taxonomy.</span></div>
+      <div class="prov-row"><span class="prov-src">Candidate profiles</span><span class="prov-arrow">←</span><span class="prov-how"><span class="mono">Deterministic synthesis (fixed seed 20260729)</span>, anchored to each real role's requirements (~78% coverage). Reproducible — <span class="ok">not AI-hallucinated</span>.</span></div>
+      <div class="prov-row"><span class="prov-src">Bridge skills</span><span class="prov-arrow">←</span><span class="prov-how">Derived from <span class="mono">Knowledge &amp; Ability containment</span> in the official taxonomy — a measurable overlap score, not a guess.</span></div>
+      <div class="prov-row"><span class="prov-src">Courses</span><span class="prov-arrow">←</span><span class="prov-how">Real, bookable <span class="mono">MySkillsFuture</span> course URLs for every gap skill.</span></div>
+    </div>
+    <p class="prov-foot">Every match traces back to official government data — deterministic · reproducible · auditable.</p>
+  </div>
+
+  <!-- Scene 13: Data Grounding Stats (148–158s) -->
+  <div id="scene-stats" class="clip scene-stats" data-start="148" data-duration="10" data-track-index="1">
+    <h2>Grounded in Real Data</h2>
+    <p>Official SWDA Skills Framework dataset</p>
+    <div class="stat-grid">
+      <div class="stat-item"><div class="num">434</div><div class="label">Skills</div></div>
+      <div class="stat-item"><div class="num">53</div><div class="label">Bridges</div></div>
+      <div class="stat-item"><div class="num">150K+</div><div class="label">K&amp;A Items</div></div>
+      <div class="stat-item"><div class="num">5</div><div class="label">Sectors</div></div>
+    </div>
+  </div>
+
+  <!-- Scene 14: Qoder Usage (158–168s) -->
+  <div id="scene-qoder" class="clip scene-qoder" data-start="158" data-duration="10" data-track-index="1">
+    <h2>Built with Qoder</h2>
+    <p>Quest Mode + Expert Mode + CLI automation — 2 weeks, 97 tests, real government data.</p>
+    <div class="mode-badges">
+      <span class="badge">Quest Mode</span>
+      <span class="badge">Expert Mode</span>
+      <span class="badge">qodercli</span>
+      <span class="badge">/review</span>
+    </div>
+  </div>
+
+  <!-- Scene 15: Close (168–180s) -->
+  <div id="scene-close" class="clip scene-close" data-start="168" data-duration="12" data-track-index="1">
+    <h1>SkillBridge SG</h1>
+    <p class="subtitle">Skills don't retire at sector boundaries. Neither should people.</p>
+    <p class="hashtags">#QoderHackathon #BuildWithQoder #SkillsFuture</p>
+    <p class="repo-url">Alibaba Cloud × Qoder Hackathon Singapore 2026</p>
+  </div>
+
+  <!-- GSAP Animations (seekable, paused) -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"
+          integrity="sha384-pEQB1h4Zmn9xhS6jotzltHSIQq6N0Oh3BXkCNOH5LKI81R2NRbb9efarAJYw9gTY"
+          crossorigin="anonymous"></script>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    // Scene 1: Title + Mission
+    tl.from("#scene-title h1", { opacity: 0, y: 40, duration: 0.8, ease: "power2.out" }, 0.3);
+    tl.from("#scene-title .subtitle", { opacity: 0, duration: 0.6 }, 1.0);
+    tl.from("#scene-title .mission", { opacity: 0, y: 15, duration: 0.6 }, 1.7);
+
+    // Scene 2: Problem
+    tl.from("#scene-problem h2", { opacity: 0, x: -30, duration: 0.5, ease: "power2.out" }, 6.3);
+    tl.from("#scene-problem p", { opacity: 0, y: 20, duration: 0.5, stagger: 0.3 }, 6.8);
+
+    // Scene 3: Solution
+    tl.from("#scene-solution h2", { opacity: 0, x: -30, duration: 0.5, ease: "power2.out" }, 15.3);
+    tl.from("#scene-solution p", { opacity: 0, duration: 0.5 }, 15.8);
+    tl.from("#scene-solution li", { opacity: 0, x: -20, duration: 0.4, stagger: 0.2 }, 16.4);
+
+    // Scene 4: Matching Engine (staggered pipeline rows)
+    tl.from("#scene-engine h2", { opacity: 0, x: -30, duration: 0.5, ease: "power2.out" }, 23.3);
+    tl.from("#scene-engine .engine-sub", { opacity: 0, duration: 0.5 }, 23.8);
+    tl.from("#scene-engine .eng-row", { opacity: 0, x: -40, duration: 0.45, stagger: 0.4, ease: "power2.out" }, 24.4);
+    tl.from("#scene-engine .engine-foot", { opacity: 0, y: 15, duration: 0.5 }, 28.2);
+
+    // Scenes 5–10: Screenshots (scale in) + captions
+    tl.from("#scene-demo-input img", { opacity: 0, scale: 0.95, duration: 0.6, ease: "power2.out" }, 47.3);
+    tl.from("#scene-demo-input .caption", { opacity: 0, y: 15, duration: 0.5 }, 47.9);
+    tl.from("#scene-demo-results img", { opacity: 0, scale: 0.95, duration: 0.6, ease: "power2.out" }, 57.3);
+    tl.from("#scene-demo-results .caption", { opacity: 0, y: 15, duration: 0.5 }, 57.9);
+    tl.from("#scene-explainability img", { opacity: 0, scale: 0.95, duration: 0.6, ease: "power2.out" }, 71.3);
+    tl.from("#scene-explainability .caption", { opacity: 0, y: 15, duration: 0.5 }, 71.9);
+    tl.from("#scene-candidate img", { opacity: 0, scale: 0.95, duration: 0.6, ease: "power2.out" }, 84.3);
+    tl.from("#scene-candidate .caption", { opacity: 0, y: 15, duration: 0.5 }, 84.9);
+    tl.from("#scene-whatif img", { opacity: 0, scale: 0.95, duration: 0.6, ease: "power2.out" }, 96.3);
+    tl.from("#scene-whatif .caption", { opacity: 0, y: 15, duration: 0.5 }, 96.9);
+    tl.from("#scene-surprise img", { opacity: 0, scale: 0.95, duration: 0.6, ease: "power2.out" }, 109.3);
+    tl.from("#scene-surprise .caption", { opacity: 0, y: 15, duration: 0.5 }, 109.9);
+
+    // Scene 11: Full Toolkit
+    tl.from("#scene-features h2", { opacity: 0, x: -30, duration: 0.5, ease: "power2.out" }, 120.3);
+    tl.from("#scene-features li", { opacity: 0, x: -20, duration: 0.4, stagger: 0.25 }, 121.0);
+
+    // Scene 12: Data Provenance
+    tl.from("#scene-provenance h2", { opacity: 0, x: -30, duration: 0.5, ease: "power2.out" }, 130.3);
+    tl.from("#scene-provenance .prov-row", { opacity: 0, x: -35, duration: 0.45, stagger: 0.5, ease: "power2.out" }, 130.9);
+    tl.from("#scene-provenance .prov-foot", { opacity: 0, y: 15, duration: 0.5 }, 133.4);
+
+    // Scene 13: Stats
+    tl.from("#scene-stats h2", { opacity: 0, x: -30, duration: 0.5 }, 148.3);
+    tl.from("#scene-stats .stat-item", { opacity: 0, scale: 0.8, duration: 0.4, stagger: 0.15, ease: "back.out(1.2)" }, 149.0);
+
+    // Scene 14: Qoder
+    tl.from("#scene-qoder h2", { opacity: 0, x: -30, duration: 0.5 }, 158.3);
+    tl.from("#scene-qoder p", { opacity: 0, duration: 0.5 }, 158.8);
+    tl.from("#scene-qoder .badge", { opacity: 0, y: 15, duration: 0.3, stagger: 0.12 }, 159.5);
+
+    // Scene 15: Close
+    tl.from("#scene-close h1", { opacity: 0, y: 30, duration: 0.8, ease: "power2.out" }, 168.3);
+    tl.from("#scene-close .subtitle", { opacity: 0, duration: 0.6 }, 169.0);
+    tl.from("#scene-close .hashtags", { opacity: 0, duration: 0.6 }, 169.6);
+    tl.from("#scene-close .repo-url", { opacity: 0, duration: 0.5 }, 170.1);
+
+    // ---- Narration-synced spotlights (draw judges' eyes to the narrated UI) ----
+    // Amber box pulses over a screenshot region: appear, breathe, fade.
+    function spot(sel, t, hold) {
+      tl.fromTo(sel, { opacity: 0, scale: 1.07 },
+        { opacity: 1, scale: 1, duration: 0.4, ease: "power2.out" }, t);
+      tl.to(sel, { scale: 1.02, duration: 0.6, yoyo: true, repeat: 3, ease: "sine.inOut" }, t + 0.5);
+      tl.to(sel, { opacity: 0, scale: 1.05, duration: 0.45, ease: "power2.in" }, t + hold);
+    }
+    // Glow a matching-engine row while the narration describes it.
+    function spotRow(sel, t, off, bg, ring) {
+      tl.to(sel, { backgroundColor: bg, boxShadow: ring, duration: 0.35, ease: "power1.out" }, t);
+      tl.to(sel, { backgroundColor: "rgba(22,78,99,0.28)",
+                   boxShadow: "0 0 0 0 rgba(6,182,212,0)", duration: 0.55, ease: "power1.in" }, off);
+    }
+
+    // Scene 4 — rows light up as the narration walks the pipeline
+    const CY = ["rgba(6,182,212,0.20)",  "0 0 26px 2px rgba(6,182,212,0.55)"];
+    const EM = ["rgba(16,185,129,0.20)", "0 0 26px 2px rgba(16,185,129,0.55)"];
+    spotRow("#scene-engine .eng-row:nth-child(1)", 25.6, 29.5, CY[0], CY[1]);  // BM25
+    spotRow("#scene-engine .eng-row:nth-child(2)", 25.6, 29.5, CY[0], CY[1]);  // dense
+    spotRow("#scene-engine .eng-row:nth-child(3)", 29.7, 31.6, CY[0], CY[1]);  // RRF
+    spotRow("#scene-engine .eng-row:nth-child(4)", 31.8, 33.8, CY[0], CY[1]);  // cross-encoder
+    spotRow("#scene-engine .eng-row:nth-child(5)", 34.0, 37.1, EM[0], EM[1]);  // proficiency
+    spotRow("#scene-engine .eng-row:nth-child(6)", 37.3, 42.2, EM[0], EM[1]);  // hybrid score
+
+    // Scenes 5–10 — spotlight the region being narrated on each screenshot
+    spot("#hl-input-jd",     47.9,  4.6);   // JD textarea
+    spot("#hl-input-btn",    52.7,  3.8);   // Find matches button
+    spot("#hl-res-card",     57.9,  5.6);   // top ranked candidate
+    spot("#hl-res-score",    63.7,  6.0);   // 96% hybrid score gauge
+    spot("#hl-card-skills",  71.9,  5.6);   // matched skills + PL levels
+    spot("#hl-card-courses", 77.7,  5.3);   // gaps + recommended courses
+    spot("#hl-toggle",       84.9,  4.3);   // Hire ↔ Upskill toggle
+    spot("#hl-upskill",      89.4,  5.9);   // upskill potential section
+    spot("#hl-whatif-panel", 96.9,  6.1);   // what-if skill checkboxes
+    spot("#hl-whatif-score", 103.2, 5.3);   // scores re-run live
+    spot("#hl-surprise-btn", 109.9, 4.1);   // Surprise me button
+    spot("#hl-surprise-tag", 114.2, 5.1);   // SERENDIPITY + unexpected match
+
+    // Hard-kill spotlights whose fade lands exactly on a clip-start boundary
+    // (guards against stale visibility under non-linear seeking).
+    tl.set("#hl-input-btn",   { opacity: 0 }, 57.0);
+    tl.set("#hl-whatif-score", { opacity: 0 }, 109.0);
+
+    // Hold the fully-rendered close scene on screen until 180s
+    // (extends the seekable timeline so the composition duration is 180s).
+    tl.to({}, { duration: 9 }, 171);
+
+    // Register timeline
+    window.__timelines = window.__timelines || {};
+    window.__timelines["skillbridge-demo"] = tl;
+  </script>
+</div>
+</body>
+</html>

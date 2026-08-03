@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        /* Apply saved theme before first paint to avoid a flash of the wrong theme. */
+        (function () {
+            var t = localStorage.getItem('sb-theme');
+            if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
+    <title>{% block title %}SkillBridge{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        /* Tokens resolve to CSS custom properties so the whole UI
+                           re-themes when the .dark class is toggled on <html>. */
+                        paper:   'rgb(var(--paper) / <alpha-value>)',
+                        cream:   'rgb(var(--cream) / <alpha-value>)',
+                        ink:     'rgb(var(--ink) / <alpha-value>)',
+                        inksoft: 'rgb(var(--inksoft) / <alpha-value>)',
+                        hairline:'rgb(var(--hairline) / <alpha-value>)',
+                        surface: 'rgb(var(--surface) / <alpha-value>)',
+                        brand:   'rgb(var(--brand) / <alpha-value>)',
+                        branddeep:'rgb(var(--branddeep) / <alpha-value>)',
+                        tang:    'rgb(var(--tang) / <alpha-value>)',
+                        fin:     'rgb(var(--fin) / <alpha-value>)',
+                        ict:     'rgb(var(--ict) / <alpha-value>)',
+                        health:  'rgb(var(--health) / <alpha-value>)',
+                        eng:     'rgb(var(--eng) / <alpha-value>)',
+                        sust:    'rgb(var(--sust) / <alpha-value>)',
+                        matchg:  'rgb(var(--matchg) / <alpha-value>)',
+                        gapr:    'rgb(var(--gapr) / <alpha-value>)',
+                        bridgeb: 'rgb(var(--bridgeb) / <alpha-value>)',
+                    },
+                    fontFamily: {
+                        display: ['Archivo', 'sans-serif'],
+                        body:    ['"Public Sans"', 'sans-serif'],
+                        mono:    ['"IBM Plex Mono"', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Theme palettes — light (default) and dark. Each token is a space-separated
+           RGB triple consumed by the Tailwind config as rgb(var(--token) / <alpha-value>). */
+        :root {
+            --paper: 247 244 238;    /* warm paper, not AI beige */
+            --cream: 239 233 221;    /* deeper panel cream */
+            --ink: 27 39 51;         /* tinted ink navy, never pure black */
+            --inksoft: 90 102 114;   /* tinted secondary, never pure gray */
+            --hairline: 220 211 194; /* warm rule color */
+            --surface: 255 255 255;  /* raised card surface */
+            --brand: 11 107 99;      /* deep civic teal */
+            --branddeep: 8 84 73;
+            --tang: 237 106 35;      /* tangerine — surprise / unexpected */
+            --fin: 192 147 11;       /* Finance line */
+            --ict: 33 84 201;        /* ICT line */
+            --health: 196 58 75;     /* Healthcare line */
+            --eng: 176 82 26;        /* Engineering line */
+            --sust: 92 138 31;       /* Sustainability line */
+            --matchg: 47 125 79;     /* matched skill */
+            --gapr: 192 68 46;       /* skill gap */
+            --bridgeb: 33 84 201;    /* bridge skill */
+        }
+        .dark {
+            --paper: 18 24 23;       /* deep tinted charcoal, never pure black */
+            --cream: 27 35 34;       /* slightly lighter panel */
+            --ink: 233 229 218;      /* warm off-white text */
+            --inksoft: 152 162 158;  /* muted secondary */
+            --hairline: 44 54 52;    /* subtle border */
+            --surface: 30 39 38;     /* raised card surface */
+            --brand: 47 179 164;     /* brightened teal for contrast */
+            --branddeep: 35 148 134;
+            --tang: 245 128 60;      /* brightened tangerine */
+            --fin: 217 172 43;
+            --ict: 91 138 232;
+            --health: 224 99 117;
+            --eng: 208 121 63;
+            --sust: 132 180 74;
+            --matchg: 76 175 119;
+            --gapr: 224 106 80;
+            --bridgeb: 91 138 232;
+        }
+        [x-cloak] { display: none !important; }
+    </style>
+    <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script>
+        /* Shared UI store — the hire/upskill perspective is held here so result
+           cards can re-frame instantly on toggle without a re-query. Both lenses
+           are recruiter-facing; the internal values stay 'recruiter'/'candidate'
+           so existing localStorage preferences keep working. */
+        document.addEventListener('alpine:init', () => {
+            Alpine.store('ui', {
+                perspective: localStorage.getItem('sb-perspective') || 'recruiter',
+                /* Client-side result refinement — instant filtering of the rendered
+                   cards without a re-query (sector dropdown, min-score, and the
+                   clickable sector-convergence pairs all feed these). */
+                sectorSelect: '',   // '' = all sectors
+                pairFilter: null,   // null or [sectorA, sectorB]
+                minScore: '0',      // '0' = any score
+                visible(sector, score) {
+                    const s = Alpine.store('ui');
+                    const passSector = !s.sectorSelect || s.sectorSelect === sector;
+                    const passPair = !s.pairFilter || s.pairFilter.includes(sector);
+                    const passScore = score >= (parseInt(s.minScore, 10) || 0);
+                    return passSector && passPair && passScore;
+                },
+                togglePair(a, b) {
+                    const s = Alpine.store('ui');
+                    s.pairFilter = (s.pairFilter && s.pairFilter[0] === a && s.pairFilter[1] === b)
+                        ? null
+                        : [a, b];
+                },
+                isActivePair(a, b) {
+                    const s = Alpine.store('ui');
+                    return !!(s.pairFilter && s.pairFilter[0] === a && s.pairFilter[1] === b);
+                },
+                filtersActive() {
+                    const s = Alpine.store('ui');
+                    return !!s.sectorSelect || !!s.pairFilter || (parseInt(s.minScore, 10) || 0) > 0;
+                },
+                clearFilters() {
+                    const s = Alpine.store('ui');
+                    s.sectorSelect = '';
+                    s.pairFilter = null;
+                    s.minScore = '0';
+                },
+            });
+
+            /* Candidate CV / profile detail modal. Recruiter-only: opens from a
+               result card, fetches the full profile on demand and renders it in
+               the single global overlay defined near the end of <body>. */
+            Alpine.store('profile', {
+                open: false,
+                loading: false,
+                data: null,
+                error: null,
+                async show(id) {
+                    const p = Alpine.store('profile');
+                    p.open = true;
+                    p.loading = true;
+                    p.data = null;
+                    p.error = null;
+                    try {
+                        const r = await fetch('/api/candidate/' + encodeURIComponent(id));
+                        if (!r.ok) throw new Error('Profile not found');
+                        p.data = await r.json();
+                    } catch (e) {
+                        p.error = e.message || 'Could not load profile';
+                    } finally {
+                        p.loading = false;
+                    }
+                },
+                close() {
+                    Alpine.store('profile').open = false;
+                },
+            });
+        });
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="bg-paper text-ink font-body min-h-screen antialiased">
+
+    <header class="border-b-[3px] border-ink bg-paper">
+        <div class="max-w-7xl mx-auto px-5 pt-6 pb-5">
+            <div class="flex items-end justify-between gap-4">
+                <div>
+                    <p class="font-mono text-[11px] uppercase tracking-[0.22em] text-inksoft">SG &middot; skills &rarr; jobs</p>
+                    <h1 class="font-display text-3xl sm:text-4xl font-extrabold tracking-tight leading-none mt-1">
+                        Skill<span class="text-brand">Bridge</span>
+                    </h1>
+                </div>
+                <div class="flex items-center gap-4">
+                    <p class="hidden md:block font-mono text-xs text-inksoft pb-1">the hidden path between skills and jobs</p>
+                    <!-- Hire / Upskill perspective toggle. Both lenses serve the
+                         recruiter: "Hire" evaluates readiness, "Upskill" shows what
+                         the candidate would need to develop. Internal values remain
+                         'recruiter'/'candidate' for backwards compatibility. -->
+                    <div x-data x-cloak class="inline-flex items-center border border-hairline bg-surface/70 rounded-md overflow-hidden font-mono text-[11px] uppercase tracking-[0.14em]" role="group" aria-label="Result perspective">
+                        <button type="button"
+                                @click="Alpine.store('ui').perspective = 'recruiter'; localStorage.setItem('sb-perspective', 'recruiter')"
+                                :class="Alpine.store('ui').perspective === 'recruiter' ? 'bg-brand text-paper' : 'text-inksoft hover:text-ink'"
+                                :aria-pressed="Alpine.store('ui').perspective === 'recruiter'"
+                                class="px-3 py-1.5 transition-colors">Hire</button>
+                        <button type="button"
+                                @click="Alpine.store('ui').perspective = 'candidate'; localStorage.setItem('sb-perspective', 'candidate')"
+                                :class="Alpine.store('ui').perspective === 'candidate' ? 'bg-brand text-paper' : 'text-inksoft hover:text-ink'"
+                                :aria-pressed="Alpine.store('ui').perspective === 'candidate'"
+                                class="px-3 py-1.5 border-l border-hairline transition-colors">Upskill</button>
+                    </div>
+                    <div x-data="{ dark: document.documentElement.classList.contains('dark') }" x-cloak>
+                        <button type="button"
+                                @click="dark = !dark; document.documentElement.classList.toggle('dark', dark); localStorage.setItem('sb-theme', dark ? 'dark' : 'light')"
+                                class="inline-flex items-center gap-2 border border-hairline bg-surface/70 rounded-md px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-inksoft hover:text-ink hover:border-brand/50 transition-colors"
+                                :aria-label="dark ? 'Switch to light mode' : 'Switch to dark mode'">
+                            <svg x-show="!dark" class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+                            <svg x-show="dark" class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                            <span x-text="dark ? 'Light' : 'Dark'"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Five-sector transit strip -->
+        <div class="flex h-1.5" aria-hidden="true">
+            <div class="flex-1 bg-fin" title="Finance"></div>
+            <div class="flex-1 bg-ict" title="ICT"></div>
+            <div class="flex-1 bg-health" title="Healthcare"></div>
+            <div class="flex-1 bg-eng" title="Engineering"></div>
+            <div class="flex-1 bg-sust" title="Sustainability"></div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-5 py-8">
+        {% block content %}
+        <p class="text-inksoft">Welcome to SkillBridge.</p>
+        {% endblock %}
+    </main>
+
+    <footer class="max-w-7xl mx-auto px-5 pb-8">
+        <p class="font-mono text-[10px] uppercase tracking-[0.18em] text-inksoft/70 border-t border-hairline pt-4">
+            SkillBridge &middot; SkillsFuture-aligned demo &middot; Finance / ICT / Healthcare / Engineering / Sustainability
+        </p>
+    </footer>
+
+    <!-- Candidate CV / profile detail modal (single global overlay). -->
+    <div x-data x-cloak x-show="$store.profile.open"
+         class="fixed inset-0 z-50 flex items-start justify-center p-4 sm:p-8 overflow-y-auto"
+         role="dialog" aria-modal="true" aria-label="Candidate profile"
+         @keydown.escape.window="$store.profile.close()">
+        <div class="fixed inset-0 bg-ink/60" @click="$store.profile.close()"></div>
+        <div class="relative w-full max-w-2xl bg-surface border border-hairline rounded-md shadow-xl my-auto" @click.stop>
+            <div class="flex items-start justify-between gap-4 px-6 py-5 border-b border-hairline">
+                <div class="min-w-0">
+                    <p class="font-mono text-[10px] uppercase tracking-[0.2em] text-brand">Candidate profile</p>
+                    <template x-if="$store.profile.data">
+                        <h2 class="font-display text-xl font-bold text-ink mt-0.5" x-text="$store.profile.data.name"></h2>
+                    </template>
+                    <template x-if="$store.profile.data">
+                        <p class="font-mono text-[11px] text-inksoft mt-0.5" x-text="`${$store.profile.data.title} · ${$store.profile.data.sector} · ${$store.profile.data.years_experience} yrs`"></p>
+                    </template>
+                </div>
+                <button type="button" @click="$store.profile.close()"
+                        class="shrink-0 text-inksoft hover:text-ink transition-colors"
+                        aria-label="Close profile">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                </button>
+            </div>
+            <div class="px-6 py-5 space-y-5">
+                <template x-if="$store.profile.loading">
+                    <p class="font-mono text-xs text-inksoft animate-pulse">Loading profile&hellip;</p>
+                </template>
+                <template x-if="$store.profile.error">
+                    <p class="font-mono text-xs text-gapr" x-text="$store.profile.error"></p>
+                </template>
+                <template x-if="$store.profile.data">
+                    <div class="space-y-5">
+                        <div>
+                            <h3 class="font-mono text-[10px] uppercase tracking-[0.16em] text-inksoft mb-1.5">Profile summary</h3>
+                            <p class="text-[13px] text-ink leading-relaxed" x-text="$store.profile.data.summary"></p>
+                        </div>
+                        <div>
+                            <h3 class="font-mono text-[10px] uppercase tracking-[0.16em] text-inksoft mb-2">Skills &middot; proficiency (L1&ndash;L6)</h3>
+                            <p class="font-mono text-[9px] uppercase tracking-wide text-inksoft/60 mb-2">L1 Use &middot; L2 Operate &middot; L3 Apply &middot; L4 Implement &middot; L5 Analyse &middot; L6 Assess/Lead</p>
+                            <div class="space-y-1.5">
+                                <template x-for="skill in $store.profile.data.skills" :key="skill">
+                                    <div class="flex items-center gap-3">
+                                        <span class="text-[12px] text-ink w-1/2 shrink-0" x-text="skill"></span>
+                                        <span class="flex-1 h-1.5 bg-cream rounded-full overflow-hidden">
+                                            <span class="block h-full bg-brand rounded-full"
+                                                  :style="`width: ${($store.profile.data.skill_levels[skill] || 0) / 6 * 100}%`"></span>
+                                        </span>
+                                        <span class="font-mono text-[10px] text-inksoft w-7 text-right" x-text="'L' + ($store.profile.data.skill_levels[skill] || '\u2013')"></span>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                        <template x-if="$store.profile.data.certifications && $store.profile.data.certifications.length">
+                            <div>
+                                <h3 class="font-mono text-[10px] uppercase tracking-[0.16em] text-inksoft mb-2">Certifications</h3>
+                                <div class="flex flex-wrap gap-1.5">
+                                    <template x-for="cert in $store.profile.data.certifications" :key="cert">
+                                        <span class="px-2 py-0.5 bg-fin/10 text-fin border border-fin/25 rounded-sm text-[11px] font-medium" x-text="cert"></span>
+                                    </template>
+                                </div>
+                            </div>
+                        </template>
+                        <p class="font-mono text-[9px] uppercase tracking-wide text-inksoft/50 border-t border-hairline pt-3">Source: SWDA Skills Framework &mdash; profile assembled from official role &amp; skills data, not generated text.</p>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

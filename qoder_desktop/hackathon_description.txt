@@ -1,0 +1,55 @@
+Alibaba Cloud x Qoder Hackathon Singapore 2026
+
+Onsite Day (22 July)
+    ​Opening & Product Intro: A brief Qoder product introduction from the Alibaba Cloud / Qoder team. Because the tool has a very low barrier to entry, this is designed to get every attendee — including non-developers — hands-on quickly.
+    ​Hands-on Build Time: Start building your Qoder project on-site with mentor support from Qoder engineers.
+    ​No On-site Judging: Projects don't need to be finalized on the day. You'll leave with a clear submission framework and continue building post-event.
+
+​Post-Event (2 Weeks)
+    ​Finalize your project at your own pace.
+    ​Post your project on LinkedIn or X and tag the official Alibaba Cloud and Qoder accounts.
+    ​Include a short write-up and/or demo video alongside your social post.
+
+​Judging Criteria
+    ​Innovation & Creativity — 25% — Originality of idea; creative use of Qoder's Quest Mode + Expert Mode
+    ​Use of Qoder — 30% — Effective use of agentic capabilities, AI integration, workflow reusability
+    ​Impact — 20% — Solves a real-world problem; likelihood of real-world adoption
+    ​Technical Execution — 15% — Completeness (incl. demo video), end-to-end functionality, appropriate complexity
+    ​Presentation & UGC — 10% — Clear explanation in videos, social post, engagement, correct tagging
+
+Submission Requirements 
+- Social Post
+	Post on LinkedIn or X (Twitter) 
+	Tag @QoderOfficial and @AlibabaCloud use #QoderHackathon #BuildWithQoder 
+- Demo Video 
+	Record a 2–3 minute video showing your project in action. 
+	Upload to YouTube, Loom, or any video platform. 
+- Submit Link 
+	Submit your social post URL and demo video link via the submission form before the August 5 deadline.
+
+Social Post (Required) Post on LinkedIn or X (Twitter): 
+•  Describe your project and what it does 
+•  Share your experience using Qoder 
+•  Tag @QoderOfficial and @AlibabaCloud 
+•  Include #QoderHackathon 
+•  Include #BuildWithQoder Tip: Include screenshots or a short clip!
+
+Demo Video (Required) Record a 2–3 minute video: 
+•  Show your project in action 
+•  Explain the problem it solves 
+•  Demonstrate key features 
+•  Upload to YouTube, Loom, or Vimeo 
+•  Submit the link via the form Keep it short, clear, and compelling!
+
+Tips for a Winning Build 
+1 Start with a Spec 
+	Write a clear spec before jumping into Quest Mode. The better your spec, the better Qoder's output. 
+2 Scope Small, Ship Big 
+	Pick a focused problem. 
+	A polished small project beats an unfinished ambitious one. 
+3 Use Quest Mode Early 
+	Let Qoder handle the scaffolding and boilerplate. Spend your time on the creative parts. 
+4 Record as You 
+	Go Capture screenshots and notes during your build — they'll make your demo video and social post easier. 
+5 Ask for Help 
+	Mentors are here for you! Don't spin your wheels — ask early, ask often.
