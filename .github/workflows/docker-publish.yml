@@ -28,6 +28,12 @@ jobs:
       - name: Show image tag
         run: echo "IMAGE TAG=${{ steps.set_tag.outputs.image_tag }}"
 
+      - name: Debug: list repo and find Dockerfile
+        run: |
+          echo "Working dir: $(pwd)"
+          ls -la
+          find . -maxdepth 5 -type f -name 'Dockerfile' -print || true
+
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
 
@@ -44,6 +50,7 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
+          context: ./qoder_cli/deploy
+          file: ./qoder_cli/deploy/Dockerfile
           push: true
           tags: ${{ steps.set_tag.outputs.image_tag }}
-          
