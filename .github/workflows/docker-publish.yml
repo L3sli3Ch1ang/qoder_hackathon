@@ -28,8 +28,8 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
-          context: .
-          file: deploy/Dockerfile
+          context: qoder_cli
+          file: qoder_cli/deploy/Dockerfile
           push: true
           tags: |
             ghcr.io/l3sli3chiang/qoder_hackathon:latest
