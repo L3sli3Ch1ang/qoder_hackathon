@@ -33,9 +33,6 @@ jobs:
         # username: your-github-username
         # password: ${{ secrets.MY_GHCR_PAT }}
 
-      - name: Show image tag
-          run: echo "IMAGE TAG=ghcr.io/${{ toLower(github.repository_owner) }}/qoder_hackathon:latest"      
-
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
