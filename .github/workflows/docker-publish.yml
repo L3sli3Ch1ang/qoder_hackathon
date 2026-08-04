@@ -1,4 +1,12 @@
 # add these permissions at workflow root
+name: Publish Docker Image
+
+on:
+  push:
+    branches:
+      - main          # change if your default branch is different
+  workflow_dispatch:   # lets you run it manually from the Actions UI
+
 permissions:
   contents: read
   packages: write
