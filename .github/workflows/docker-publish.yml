@@ -32,5 +32,5 @@ jobs:
           file: deploy/Dockerfile
           push: true
           tags: |
-            ghcr.io/${{ env.REPO_OWNER }}/qoder_hackathon:latest
-            ghcr.io/${{ env.REPO_OWNER }}/qoder_hackathon:${{ github.sha }}
+            ghcr.io/l3sli3chiang/qoder_hackathon:latest
+            ghcr.io/l3sli3chiang/qoder_hackathon:${{ github.sha }}
