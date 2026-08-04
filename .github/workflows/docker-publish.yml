@@ -1,11 +1,10 @@
-# add these permissions at workflow root
 name: Publish Docker Image
 
 on:
   push:
     branches:
-      - main          # change if your default branch is different
-  workflow_dispatch:   # lets you run it manually from the Actions UI
+      - main
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -16,6 +15,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Set lowercase owner + tag
+        id: set_tag
+        run: |
+          OWNER="${{ github.repository_owner }}"
+          OWNER_LOWER="$(echo "$OWNER" | tr '[:upper:]' '[:lower:]')"
+          REPO_NAME="${{ github.event.repository.name }}"
+          IMAGE_TAG="ghcr.io/${OWNER_LOWER}/${REPO_NAME}:latest"
+          echo "image_tag=${IMAGE_TAG}" >> "$GITHUB_OUTPUT"
+
+      - name: Show image tag
+        run: echo "IMAGE TAG=${{ steps.set_tag.outputs.image_tag }}"
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
@@ -29,12 +40,10 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-        # If using a PAT instead, use:
-        # username: your-github-username
-        # password: ${{ secrets.MY_GHCR_PAT }}
 
       - name: Build and push
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: ghcr.io/${{ toLower(github.repository_owner) }}/qoder_hackathon:latest
+          tags: ${{ steps.set_tag.outputs.image_tag }}
+          
