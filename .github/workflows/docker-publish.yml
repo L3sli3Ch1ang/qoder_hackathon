@@ -2,55 +2,36 @@ name: Publish Docker Image
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   workflow_dispatch:
-
-permissions:
-  contents: read
-  packages: write
 
 jobs:
   publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set lowercase owner + tag
-        id: set_tag
-        run: |
-          OWNER="${{ github.repository_owner }}"
-          OWNER_LOWER="$(echo "$OWNER" | tr '[:upper:]' '[:lower:]')"
-          REPO_NAME="${{ github.event.repository.name }}"
-          IMAGE_TAG="ghcr.io/${OWNER_LOWER}/${REPO_NAME}:latest"
-          echo "image_tag=${IMAGE_TAG}" >> "$GITHUB_OUTPUT"
+      - name: Set lowercase owner
+        run: echo "REPO_OWNER=l3sli3chiang" >> $GITHUB_ENV
 
-      - name: Show image tag
-        run: echo "IMAGE TAG=${{ steps.set_tag.outputs.image_tag }}"
-
-      - name: "Debug: list repo and find Dockerfile" 
-        run: | 
-          echo "Working dir: $(pwd)" 
-          ls -la 
-          find . -maxdepth 5 -type f -name 'Dockerfile' -print || true
-
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v2
-
-      - name: Set up buildx
-        uses: docker/setup-buildx-action@v2
-
-      - name: Log in to GitHub Container Registry
-        uses: docker/login-action@v2
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
-          context: ./qoder_cli/deploy
-          file: ./qoder_cli/deploy/Dockerfile
+          context: qoder_cli
+          file: qoder_cli/deploy/Dockerfile
           push: true
-          tags: ${{ steps.set_tag.outputs.image_tag }}
+          tags: |
+            ghcr.io/l3sli3chiang/qoder_hackathon:latest
+            ghcr.io/l3sli3chiang/qoder_hackathon:${{ github.sha }}
+            
