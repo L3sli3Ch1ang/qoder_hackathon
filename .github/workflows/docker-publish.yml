@@ -28,10 +28,10 @@ jobs:
       - name: Show image tag
         run: echo "IMAGE TAG=${{ steps.set_tag.outputs.image_tag }}"
 
-      - name: Debug: list repo and find Dockerfile
-        run: |
-          echo "Working dir: $(pwd)"
-          ls -la
+      - name: "Debug: list repo and find Dockerfile" 
+        run: | 
+          echo "Working dir: $(pwd)" 
+          ls -la 
           find . -maxdepth 5 -type f -name 'Dockerfile' -print || true
 
       - name: Set up QEMU
