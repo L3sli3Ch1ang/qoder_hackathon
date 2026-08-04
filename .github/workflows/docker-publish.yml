@@ -1,36 +1,32 @@
-name: Publish Docker Image
-
-on:
-  push:
-    branches: [main]
-  workflow_dispatch:
+# add these permissions at workflow root
+permissions:
+  contents: read
+  packages: write
 
 jobs:
   publish:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
-
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set lowercase owner
-        run: echo "REPO_OWNER=l3sli3chiang" >> $GITHUB_ENV
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v2
 
-      - name: Log in to GHCR
-        uses: docker/login-action@v3
+      - name: Set up buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v2
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+        # If using a PAT instead, use:
+        # username: your-github-username
+        # password: ${{ secrets.MY_GHCR_PAT }}
 
       - name: Build and push
-        uses: docker/build-push-action@v5
+        uses: docker/build-push-action@v4
         with:
-          context: qoder_cli
-          file: qoder_cli/deploy/Dockerfile
           push: true
-          tags: |
-            ghcr.io/l3sli3chiang/qoder_hackathon:latest
-            ghcr.io/l3sli3chiang/qoder_hackathon:${{ github.sha }}
+          tags: ghcr.io/${{ github.repository_owner }}/qoder_hackathon:latest
