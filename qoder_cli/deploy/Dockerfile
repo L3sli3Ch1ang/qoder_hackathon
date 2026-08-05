@@ -58,10 +58,8 @@ COPY --chown=appuser:appuser templates /home/appuser/app/templates
 COPY --chown=appuser:appuser static /home/appuser/app/static
 COPY --chown=appuser:appuser deploy/start.sh /home/appuser/app/start.sh
 
-# Pre-download models
-RUN python -c "from sentence_transformers import SentenceTransformer, CrossEncoder; \
-    SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2'); \
-    CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')"
+# Models are downloaded on first request (not pre-downloaded to save build memory)
+# HF_HOME is set to /home/appuser/.cache/huggingface for persistent storage
 
 EXPOSE 7860
 
