@@ -69,9 +69,36 @@ docker run -p 7860:7860 \
 
 ---
 
-## 3. Free-forever online hosting — Oracle Cloud Free Tier
+## 3. Free-forever online hosting — Render (Quick & Easy)
+
+**Render** is the easiest deployment option. Free tier, supports Docker, injects
+`PORT` automatically (the app already honors it).
+
+**Caveat**: Free tier has 512MB RAM — may be tight for ML workloads. Free instances sleep after ~15 min idle; first request after a sleep is a cold start (~15–30 s).
+
+### Steps to deploy:
+
+1. Push this repo to GitHub (already done).
+2. Go to https://dashboard.render.com → **New → Web Service**
+3. Connect your GitHub repo (`L3sli3Ch1ang/qoder_hackathon`)
+4. **Environment**: Docker
+5. **Root Directory**: `qoder_cli` (important — this is the build context)
+6. **Dockerfile Path**: `deploy/Dockerfile`
+7. **Plan**: Free
+8. Click **Deploy**
+
+You get a public URL like `https://skillbridge-sg.onrender.com`.
+
+Render automatically injects the `PORT` environment variable, so no changes to the
+Dockerfile are needed.
+
+---
+
+## 4. Free-forever online hosting — Oracle Cloud Free Tier (24GB RAM)
 
 **Oracle Cloud Free Tier** provides an always-free ARM instance with **24GB RAM** — perfect for ML workloads.
+
+**Note**: ARM instances may show "Out of capacity" — try different availability domains (AD-2, AD-3) or wait for capacity.
 
 ### Prerequisites:
 - Oracle Cloud account (free): https://www.oracle.com/cloud/free/
@@ -91,6 +118,7 @@ docker run -p 7860:7860 \
    - **OCPU count**: 1 (or up to 4 for free tier)
    - **Memory**: 6GB (or up to 24GB for free tier)
    - **SSH key**: Upload your public key
+   - **Networking**: Public subnet + Assign public IP
 6. Click **Create**
 
 ### Step 2: Connect to Instance
@@ -166,7 +194,7 @@ You get a permanent public URL like `http://123.45.67.89`
 
 ---
 
-## 4. Files in this folder
+## 5. Files in this folder
 
 | File | Purpose |
 |---|---|
@@ -174,7 +202,7 @@ You get a permanent public URL like `http://123.45.67.89`
 | `deploy/start.sh` | Entrypoint; runs uvicorn on `$PORT` (default 7860) |
 | `.dockerignore` (repo root) | Keeps build context small |
 
-## 5. Verified behaviour (tested)
+## 6. Verified behaviour (tested)
 
 - `GET /health` → `{"status":"ok"}` (container reports `healthy`)
 - `POST /api/match` with an AI Governance JD → 10 ranked results, proficiency-aware
