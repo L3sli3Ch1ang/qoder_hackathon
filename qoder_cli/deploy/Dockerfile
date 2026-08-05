@@ -57,6 +57,7 @@ COPY --chown=appuser:appuser app /home/appuser/app/app
 COPY --chown=appuser:appuser templates /home/appuser/app/templates
 COPY --chown=appuser:appuser static /home/appuser/app/static
 COPY --chown=appuser:appuser deploy/start.sh /home/appuser/app/start.sh
+RUN chmod +x /home/appuser/app/start.sh
 
 # Models are downloaded on first request (not pre-downloaded to save build memory)
 # HF_HOME is set to /home/appuser/.cache/huggingface for persistent storage
