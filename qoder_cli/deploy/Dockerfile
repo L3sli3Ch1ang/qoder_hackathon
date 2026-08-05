@@ -32,9 +32,11 @@ RUN apt-get update \
 
 # Create non-root user FIRST so --chown works on the next COPY
 # (avoids a 1.3 GB duplicate layer from `chown -R` after the copy).
-# Explicit chmod 755 so the appuser can create ~/.cache at model-pre-download time.
+# Pre-create .cache and qdrant_data directories so appuser can write to them at runtime.
 RUN useradd -m -u 1000 appuser \
-    && chmod 755 /home/appuser
+    && chmod 755 /home/appuser \
+    && mkdir -p /home/appuser/.cache /home/appuser/qdrant_data \
+    && chown -R appuser:appuser /home/appuser
 
 # Copy Python deps from builder, owned by appuser from the start
 COPY --from=builder --chown=appuser:appuser /root/.local /home/appuser/.local
