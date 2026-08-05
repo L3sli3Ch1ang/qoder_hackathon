@@ -197,12 +197,12 @@ gcloud auth configure-docker asia-southeast1-docker.pkg.dev
 
 # Build and push
 cd qoder_cli
-docker build -f deploy/Dockerfile -t asia-southeast1-docker.pkg.dev/YOUR_PROJECT_ID/skillbridge-repo/skillbridge-sg:latest .
-docker push asia-southeast1-docker.pkg.dev/YOUR_PROJECT_ID/skillbridge-repo/skillbridge-sg:latest
+docker build -f deploy/Dockerfile -t asia-southeast1-docker.pkg.dev/skillbridge-sg/skillbridge-repo/skillbridge-sg:latest .
+docker push asia-southeast1-docker.pkg.dev/skillbridge-sg/skillbridge-repo/skillbridge-sg:latest
 
 # Deploy
 gcloud run deploy skillbridge-sg \
-  --image=asia-southeast1-docker.pkg.dev/YOUR_PROJECT_ID/skillbridge-repo/skillbridge-sg:latest \
+  --image=asia-southeast1-docker.pkg.dev/skillbridge-sg/skillbridge-repo/skillbridge-sg:latest \
   --region=asia-southeast1 \
   --allow-unauthenticated \
   --memory=2Gi \

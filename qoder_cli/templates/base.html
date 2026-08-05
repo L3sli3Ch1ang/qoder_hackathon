@@ -91,6 +91,26 @@
             --bridgeb: 91 138 232;
         }
         [x-cloak] { display: none !important; }
+
+        /* Fix native <select> dropdowns in dark mode for Chromium browsers.
+           Chromium does not inherit dark-mode colors into the dropdown popup,
+           so <option> elements render with a white background and invisible text.
+           Explicitly setting background and color on both select and option
+           forces Chromium to honour the theme. */
+        .dark select {
+            background-color: rgb(30 39 38);
+            color: rgb(233 229 218);
+            color-scheme: dark;
+        }
+        .dark select option {
+            background-color: rgb(30 39 38);
+            color: rgb(233 229 218);
+        }
+        .dark select option:hover,
+        .dark select option:checked {
+            background-color: rgb(44 54 52);
+            color: rgb(233 229 218);
+        }
     </style>
     <script src="https://unpkg.com/htmx.org@1.9.12"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
