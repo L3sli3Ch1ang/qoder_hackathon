@@ -143,11 +143,11 @@ Dockerfile are needed.
 4. **Branch**: `^main$`
 5. **Included file filter**: `qoder_cli/**`
 6. **Configuration**: Cloud Build configuration file
-7. **Location**: `qoder_cli/cloudbuild.yaml`
+7. **Location**: `qoder_cli/deploy/cloudbuild.yaml`
 
 ### Step 6: Create cloudbuild.yaml
 
-Create `qoder_cli/cloudbuild.yaml`:
+Create `qoder_cli/deploy/cloudbuild.yaml`:
 
 ```yaml
 steps:
