@@ -13,6 +13,7 @@ qdrant_data/
 
 # direnv / nix
 .direnv/
+.envrc
 
 # Test / tooling caches
 .pytest_cache/

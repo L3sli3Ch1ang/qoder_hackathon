@@ -5,49 +5,67 @@
 # Build from the repository root so the image can copy app/, templates/, static/:
 #   docker build -f deploy/Dockerfile -t skillbridge-sg .
 
+# --- STAGE 1: Builder ---
+FROM python:3.13-slim AS builder
+WORKDIR /build
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends gcc g++ \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install CPU-only PyTorch
+RUN pip install --no-cache-dir --user \
+    torch --index-url https://download.pytorch.org/whl/cpu
+
+# Install all requirements
+COPY requirements.txt .
+RUN pip install --no-cache-dir --user -r requirements.txt
+
+# --- STAGE 2: Runtime ---
 FROM python:3.13-slim
+WORKDIR /home/appuser/app
 
-ENV PYTHONDONTWRITEBYTECODE=1 \
-    PYTHONUNBUFFERED=1 \
-    PIP_NO_CACHE_DIR=1 \
-    HF_HOME=/models \
-    HF_HUB_DISABLE_TELEMETRY=1 \
-    SKILLBRIDGE_QDRANT_PATH=/srv/qdrant_data
-
-WORKDIR /srv
-
-# Minimal system tooling. curl is used for the container HEALTHCHECK.
+# Minimal system tools
 RUN apt-get update \
     && apt-get install -y --no-install-recommends curl \
     && rm -rf /var/lib/apt/lists/*
 
-# CPU-only PyTorch first (much smaller than the CUDA build; the app is CPU-only).
-RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+# Create non-root user FIRST so --chown works on the next COPY
+# (avoids a 1.3 GB duplicate layer from `chown -R` after the copy).
+# Explicit chmod 755 so the appuser can create ~/.cache at model-pre-download time.
+RUN useradd -m -u 1000 appuser \
+    && chmod 755 /home/appuser
 
-COPY requirements.txt /tmp/requirements.txt
-RUN pip install --no-cache-dir -r /tmp/requirements.txt
+# Copy Python deps from builder, owned by appuser from the start
+COPY --from=builder --chown=appuser:appuser /root/.local /home/appuser/.local
 
-# Application code + assets.
-COPY app /srv/app
-COPY templates /srv/templates
-COPY static /srv/static
+USER appuser
 
-# Bake the two HF models into the image so cold starts do not re-download them.
-RUN python - <<'PY'
-from sentence_transformers import SentenceTransformer, CrossEncoder
-SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
-CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
-print("models cached OK")
-PY
+ENV HOME=/home/appuser \
+    PATH=/home/appuser/.local/bin:$PATH \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    HF_HOME=/home/appuser/.cache/huggingface \
+    HF_HUB_DISABLE_TELEMETRY=1 \
+    SKILLBRIDGE_QDRANT_PATH=/home/appuser/qdrant_data \
+    OMP_NUM_THREADS=1 \
+    MKL_NUM_THREADS=1 \
+    PORT=7860
 
-COPY deploy/start.sh /srv/start.sh
-RUN chmod +x /srv/start.sh
+# Application code
+COPY --chown=appuser:appuser app /home/appuser/app/app
+COPY --chown=appuser:appuser templates /home/appuser/app/templates
+COPY --chown=appuser:appuser static /home/appuser/app/static
+COPY --chown=appuser:appuser deploy/start.sh /home/appuser/app/start.sh
 
-# Default port; hosts that inject PORT (Render) or need 7860 (HF) override this.
-ENV PORT=8000
-EXPOSE 8000
+# Pre-download models
+RUN python -c "from sentence_transformers import SentenceTransformer, CrossEncoder; \
+    SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2'); \
+    CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')"
+
+EXPOSE 7860
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=60s --retries=3 \
     CMD curl -fsS http://127.0.0.1:${PORT}/health || exit 1
 
-CMD ["/srv/start.sh"]
+CMD ["./start.sh"]
