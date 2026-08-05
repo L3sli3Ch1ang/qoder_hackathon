@@ -20,7 +20,7 @@ docker build -f deploy/Dockerfile -t skillbridge-sg:latest .
 ```
 
 Notes:
-- Build context is the repo root so the image can copy `app/`, `templates/, `static/`.
+- Build context is the repo root so the image can copy `app/`, `templates/`, `static/`.
   The root `.dockerignore` keeps the context small (excludes `.venv`, `.direnv`,
   `demo-video`, etc.).
 - First build takes ~5–8 min (downloads CPU torch + the two HF models). Rebuilds reuse
@@ -69,29 +69,100 @@ docker run -p 7860:7860 \
 
 ---
 
-## 3. Free-forever online hosting — Render
+## 3. Free-forever online hosting — Oracle Cloud Free Tier
 
-**Render** is the recommended deployment target. Free tier, supports Docker, injects
-`PORT` automatically (the app already honors it).
+**Oracle Cloud Free Tier** provides an always-free ARM instance with **24GB RAM** — perfect for ML workloads.
 
-**Caveat**: Free instances sleep after ~15 min idle; first request after a sleep is a
-cold start (~15–30 s).
+### Prerequisites:
+- Oracle Cloud account (free): https://www.oracle.com/cloud/free/
+- SSH client
+- GitHub repo pushed (already done)
 
-### Steps to deploy:
+### Step 1: Create Oracle Cloud Instance
 
-1. Push this repo to GitHub (already done).
-2. Go to https://dashboard.render.com → **New → Web Service**
-3. Connect your GitHub repo (`L3sli3Ch1ang/qoder_hackathon`)
-4. **Environment**: Docker
-5. **Root Directory**: `qoder_cli` (important — this is the build context)
-6. **Dockerfile Path**: `deploy/Dockerfile`
-7. **Plan**: Free
-8. Click **Deploy**
+1. Go to https://cloud.oracle.com/
+2. Sign in or create account
+3. Navigate to **Compute** → **Instances**
+4. Click **Create instance**
+5. Configure:
+   - **Name**: `skillbridge-sg`
+   - **Image**: Ubuntu 22.04 (or latest)
+   - **Shape**: `VM.Standard.A1.Flex` (ARM, always free)
+   - **OCPU count**: 1 (or up to 4 for free tier)
+   - **Memory**: 6GB (or up to 24GB for free tier)
+   - **SSH key**: Upload your public key
+6. Click **Create**
 
-You get a public URL like `https://skillbridge-sg.onrender.com`.
+### Step 2: Connect to Instance
 
-Render automatically injects the `PORT` environment variable, so no changes to the
-Dockerfile are needed.
+```bash
+ssh ubuntu@<YOUR_INSTANCE_PUBLIC_IP>
+```
+
+### Step 3: Install Docker on Instance
+
+```bash
+# Update system
+sudo apt update && sudo apt upgrade -y
+
+# Install Docker
+sudo apt install -y docker.io
+
+# Start Docker and enable on boot
+sudo systemctl start docker
+sudo systemctl enable docker
+
+# Add ubuntu user to docker group (no sudo needed)
+sudo usermod -aG docker $USER
+newgrp docker
+
+# Verify Docker works
+docker --version
+```
+
+### Step 4: Clone Repo and Build
+
+```bash
+# Clone the repository
+git clone https://github.com/L3sli3Ch1ang/qoder_hackathon.git
+cd qoder_hackathon/qoder_cli
+
+# Build the Docker image
+docker build -f deploy/Dockerfile -t skillbridge-sg:latest .
+```
+
+### Step 5: Run the Container
+
+```bash
+# Run on port 80 (HTTP)
+docker run -d \
+  --name skillbridge \
+  --restart unless-stopped \
+  -p 80:7860 \
+  skillbridge-sg:latest
+```
+
+### Step 6: Open Firewall Port
+
+```bash
+# Allow HTTP traffic
+sudo iptables -I INPUT -p tcp --dport 80 -j ACCEPT
+sudo iptables -I OUTPUT -p tcp --sport 80 -j ACCEPT
+```
+
+Also in Oracle Cloud Console:
+1. Go to **Networking** → **Virtual cloud networks** → your VCN
+2. **Security Lists** → **Default Security List**
+3. **Add Ingress Rule**:
+   - Source: `0.0.0.0/0`
+   - Protocol: TCP
+   - Destination port: 80
+
+### Step 7: Access Your App
+
+Open browser: `http://<YOUR_INSTANCE_PUBLIC_IP>`
+
+You get a permanent public URL like `http://123.45.67.89`
 
 ---
 
