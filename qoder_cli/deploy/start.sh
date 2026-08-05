@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-# Honor PORT injected by the host (Render sets PORT; HF Spaces expects 7860).
+# Honor PORT injected by the host (Render sets PORT automatically).
 PORT="${PORT:-7860}"
 
 echo "SkillBridge SG starting on 0.0.0.0:${PORT}"
