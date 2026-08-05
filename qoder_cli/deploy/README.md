@@ -83,9 +83,10 @@ cold start (~15–30 s).
 2. Go to https://dashboard.render.com → **New → Web Service**
 3. Connect your GitHub repo (`L3sli3Ch1ang/qoder_hackathon`)
 4. **Environment**: Docker
-5. **Dockerfile Path**: `qoder_cli/deploy/Dockerfile`
-6. **Plan**: Free
-7. Click **Deploy**
+5. **Root Directory**: `qoder_cli` (important — this is the build context)
+6. **Dockerfile Path**: `deploy/Dockerfile`
+7. **Plan**: Free
+8. Click **Deploy**
 
 You get a public URL like `https://skillbridge-sg.onrender.com`.
 
