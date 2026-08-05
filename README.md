@@ -9,6 +9,14 @@
 **Status:** v2.0 — working demo, 97 tests green, grounded in the official Skills &
 Workforce Development Agency (SWDA) Skills Framework dataset.
 
+### Try it out
+
+| | Link |
+|---|---|
+| **Live demo** | https://skillbridge-sg-1011057703879.asia-southeast1.run.app/ |
+| **Demo video** | https://www.youtube.com/watch?v=DhmpkfX31yg |
+| **Source code** | https://github.com/L3sli3Ch1ang/qoder_hackathon/tree/main |
+
 ---
 
 ## Development Environment (NixOS + direnv + flake)
@@ -22,8 +30,8 @@ declaratively provisioned by the flake. No manual installs, no `apt`, no
 
 | Folder | Purpose | Activation |
 |---|---|---|
-| `qoder_desktop/` | Qoder Desktop (Electron) + Qdrant + full dev stack | `cd qoder_desktop` → direnv auto-loads `flake.nix` |
-| `qoder_cli/` | SkillBridge app + Qoder CLI + FastAPI + Bun | `cd qoder_cli` → direnv auto-loads `flake.nix` |
+| `qoder_desktop/` | Qoder Desktop (Electron) | `cd qoder_desktop` → direnv auto-loads `flake.nix` |
+| `qoder_cli/` | SkillBridge app + Qoder CLI + Qdrant + FastAPI + Bun + full dev stack | `cd qoder_cli` → direnv auto-loads `flake.nix` |
 
 ### How it works
 
@@ -35,8 +43,8 @@ Each subfolder contains:
 
 ```bash
 # Just cd in — direnv activates the flake shell automatically
-cd qoder_desktop    # Qoder Desktop + Qdrant + Qoder CLI + IDEs
-cd qoder_cli        # Qoder CLI + FastAPI + Bun + Python + FFmpeg + Chromium
+cd qoder_desktop    # Qoder Desktop + IDEs
+cd qoder_cli        # SkillBridge app + Qoder CLI + Qdrant + FastAPI + Bun + Python + FFmpeg + Chromium
 ```
 
 No `nix develop` wrapper needed — direnv handles it transparently.
@@ -354,6 +362,12 @@ Regenerate seed data (requires the official workbooks in `.research/`):
 ```bash
 python scripts/build_swda_seed.py                      # stdlib only, deterministic
 ```
+
+### Deploy your own instance
+
+See [`deploy/README.md`](deploy/README.md) for Docker build instructions, local
+Docker run, and step-by-step guides for deploying to **Google Cloud Run**,
+**Render**, or **Oracle Cloud Free Tier**.
 
 ---
 

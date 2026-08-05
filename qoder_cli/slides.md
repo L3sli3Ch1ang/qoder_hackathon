@@ -81,6 +81,8 @@ style: |
 
 Alibaba Cloud × Qoder Hackathon Singapore 2026
 
+**Live app**: https://skillbridge-sg-1011057703879.asia-southeast1.run.app/
+
 ---
 
 # The Problem
@@ -197,14 +199,18 @@ All data grounded in **official SWDA Skills Framework dataset**:
 
 # Demo
 
-**Video**: https://youtu.be/DhmpkfX31yg
+**Live app**: https://skillbridge-sg-1011057703879.asia-southeast1.run.app/
 
-**GitHub**: https://github.com/L3sli3Ch1ang/qoder_hackathon.git
+**Video**: https://www.youtube.com/watch?v=DhmpkfX31yg
+
+**GitHub**: https://github.com/L3sli3Ch1ang/qoder_hackathon
 
 Live app: FastAPI + Alpine.js + Tailwind
 
 Run locally:
 ```bash
+# Just cd in — direnv activates the flake shell automatically
+cd qoder_cli
 uvicorn app.main:app --host 127.0.0.1 --port 8000
 ```
 
@@ -244,7 +250,8 @@ Evidence: `AGENTS.md`, `docs/evidence/`, `docs/evidence/code-reviews/`
 
 Questions?
 
-**Demo**: https://youtu.be/DhmpkfX31yg  
-**GitHub**: https://github.com/L3sli3Ch1ang/qoder_hackathon.git
+**Live app**: https://skillbridge-sg-1011057703879.asia-southeast1.run.app/  
+**Demo video**: https://www.youtube.com/watch?v=DhmpkfX31yg  
+**GitHub**: https://github.com/L3sli3Ch1ang/qoder_hackathon/tree/main
 
 #QoderHackathon #BuildWithQoder #SkillsFuture #AlibabaCloud
