@@ -1,0 +1,28 @@
+steps:
+  # Build the Docker image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-f', 'deploy/Dockerfile', '-t', 'asia-southeast1-docker.pkg.dev/$PROJECT_ID/skillbridge-repo/skillbridge-sg:$SHORT_SHA', '.']
+    dir: 'qoder_cli'
+
+  # Push to Artifact Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'asia-southeast1-docker.pkg.dev/$PROJECT_ID/skillbridge-repo/skillbridge-sg:$SHORT_SHA']
+
+  # Deploy to Cloud Run
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      - 'run'
+      - 'deploy'
+      - 'skillbridge-sg'
+      - '--image=asia-southeast1-docker.pkg.dev/$PROJECT_ID/skillbridge-repo/skillbridge-sg:$SHORT_SHA'
+      - '--region=asia-southeast1'
+      - '--platform=managed'
+      - '--allow-unauthenticated'
+      - '--memory=2Gi'
+      - '--cpu=1'
+      - '--port=7860'
+      - '--set-env-vars=PORT=7860'
+
+images:
+  - 'asia-southeast1-docker.pkg.dev/$PROJECT_ID/skillbridge-repo/skillbridge-sg:$SHORT_SHA'
